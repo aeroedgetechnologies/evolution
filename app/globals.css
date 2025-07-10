@@ -1,42 +1,186 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-bg: #e6f0fa;
+  --secondary-bg: #f5f5f5;
+  --nav-bg: #f5f5f5;
+  --footer-bg: #222;
+  --footer-color: #fff;
+  --max-width: 1200px;
+  --border-radius: 8px;
+  --gap: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--nav-bg);
+  justify-content: center;
+}
+
+nav a, nav span {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background 0.2s;
+}
+
+nav a:hover, nav span:hover {
+  background: #d0e3fa;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  margin-bottom: var(--gap);
+}
+
+footer {
+  margin-top: var(--gap);
+  padding: 1rem;
+  background: var(--footer-bg);
+  color: var(--footer-color);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  main {
+    padding: 0 1rem;
+  }
+  section {
+    padding: 1.5rem 0.5rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.3em;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+  nav a, nav span {
+    padding: 0.5rem 0.5rem;
+    font-size: 1em;
+  }
+  section {
+    padding: 1rem 0.25rem;
+  }
+  .featured, .news-list, ul {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
+  }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Utility classes for flex layouts */
+.featured, .news-list, ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
 }
 
-* {
+.featured > div, .news-list > div, ul > li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  min-width: 200px;
+  flex: 1 1 200px;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-a {
-  color: inherit;
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--nav-bg);
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-label {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background 0.2s;
+  color: #222;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 180px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #222;
   text-decoration: none;
+  border-radius: 0;
+  transition: background 0.2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.dropdown-content a:hover {
+  background: #e6f0fa;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .dropdown-content {
+    left: 0;
+    right: auto;
+    min-width: 140px;
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: #fff;
   }
 }
