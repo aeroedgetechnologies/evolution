@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 
 const newsItems = [
   {
@@ -46,21 +45,16 @@ const newsItems = [
   },
 ];
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return newsItems.map((item) => ({ slug: item.slug }));
 }
 
-interface NewsDetailPageProps {
-  params: { slug: string };
-}
-
-export default function NewsDetailPage({ params }: NewsDetailPageProps) {
-  const { slug } = params;
+export default function Page(props: any) {
+  const slug = props?.params?.slug;
   const news = newsItems.find((n) => n.slug === slug);
   if (!news) return notFound();
   return (
     <div style={{ maxWidth: 900, margin: '2.5rem auto', padding: '2rem 1rem', background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.07)' }}>
-      <Link href="/news" style={{ color: '#20539b', fontWeight: 600, fontSize: '1.05rem', textDecoration: 'none' }}>&larr; Back to News</Link>
       <h1 style={{ color: '#20539b', fontWeight: 800, margin: '1.5rem 0 1rem 0' }}>{news.title}</h1>
       <div style={{ color: '#888', fontSize: '1rem', marginBottom: 16 }}>{news.date}</div>
       <img src={news.image} alt={news.title} style={{ width: '100%', maxHeight: 400, objectFit: 'cover', borderRadius: 8, marginBottom: 24 }} />
