@@ -606,6 +606,20 @@ footer {
   margin-top: 0.5rem;
   color: #fff;
 }
+.energyworld-footer__bottom a[href="https://govindayadavfolio.vercel.app/"] {
+  color: #5fa8d3 !important;
+  font-weight: 700;
+  font-size: 1.08em;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: none;
+  padding-bottom: 0;
+  transition: color 0.2s;
+}
+.energyworld-footer__bottom a[href="https://govindayadavfolio.vercel.app/"]:hover {
+  color: #1565c0 !important;
+  border-bottom: none;
+}
 
 /* Responsive header/footer/menu */
 @media (max-width: 900px) {
@@ -1509,4 +1523,24 @@ li.has-dropdown {
   .energyworld-nav__list .dropdown.open {
     display: block !important;
   }
+  /* Ensure nested submenus also open below, not to the side */
+  .energyworld-nav__list .dropdown .dropdown {
+    position: static !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    box-shadow: none !important;
+    background: #20539b !important;
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+}
+
+.energyworld-nav__list > li:not(:hover):not(.active):not(.open) > a::after,
+.energyworld-nav__list > li:not(:hover):not(.active):not(.open) > span::after {
+  display: none !important;
+  background: none !important;
+  height: 0 !important;
 }

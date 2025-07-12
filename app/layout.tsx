@@ -69,13 +69,45 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="energyworld-footer__col">
               <div><b>Quick Links</b></div>
-              <div><Link href="/about">About</Link></div>
-              <div><Link href="/services">Services</Link></div>
-              <div><Link href="/contact">Contact</Link></div>
+              <div style={{ marginBottom: '0.5em' }}>
+                <Link href="/about" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>About</Link>
+              </div>
+              <div style={{ marginBottom: '0.5em' }}>
+                <Link href="/services" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Services</Link>
+              </div>
+              <div>
+                <Link href="/contact" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Contact</Link>
+              </div>
             </div>
           </div>
           <div className="energyworld-footer__bottom">
             <div>© 2025 Energy World. All rights reserved.</div>
+            <div style={{
+              fontSize: '1.08em',
+              color: '#fff',
+              marginTop: 4,
+              fontWeight: 600,
+              letterSpacing: '0.01em'
+            }}>
+              Developed by{' '}
+              <a
+                href="https://govindayadavfolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#5fa8d3',
+                  fontWeight: 600,
+                  fontSize: '1.08em',
+                  cursor: 'pointer',
+                  textDecoration: 'none',
+                  border: 'none',
+                  background: 'none',
+                  padding: 0,
+                }}
+              >
+                Govinda Yadav
+              </a>
+            </div>
           </div>
         </footer>
       </body>

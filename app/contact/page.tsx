@@ -19,7 +19,7 @@ export default function ContactPage() {
     setSuccess('');
     setError('');
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://mfs-backend-8j9h.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
