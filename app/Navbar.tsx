@@ -44,12 +44,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="mfs-nav">
+    <nav className="energyworld-nav">
       {/* Hamburger only for mobile */}
-      <div className="mfs-nav__hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ display: isMobile ? 'flex' : 'none' }}>
+      <div className="energyworld-nav__hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ display: isMobile ? 'flex' : 'none' }}>
         <span style={{fontSize:'2rem',color:'#fff',marginRight:8}}>&#9776;</span>
       </div>
-      <ul className={`mfs-nav__list${isMobile && menuOpen ? ' open' : ''}`}>
+      <ul className={`energyworld-nav__list${isMobile && menuOpen ? ' open' : ''}`}>
         <li className="active"><Link href="/">HOME</Link></li>
         <li className="has-dropdown"
           onMouseEnter={() => handleMouseEnter('main', 'about')}

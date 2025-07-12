@@ -10,14 +10,14 @@ const newsItems = [
   },
   {
     slug: 'lm5000-ready-for-transport',
-    title: 'MFS Workshop – LM5000 ready for transport to the customer',
+    title: 'Energy World Workshop – LM5000 ready for transport to the customer',
     date: 'Jul 3, 2025',
     image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80',
     desc: 'LM5000 unit is ready for transport after a successful overhaul and testing. Our team ensured all quality checks were passed and the unit is now on its way to the customer.'
   },
   {
     slug: 'two-lm5000-left-workshop',
-    title: 'MFS Workshop – 2 LM5000 gas turbines left our Workshop within 1 week!',
+    title: 'Energy World Workshop – 2 LM5000 gas turbines left our Workshop within 1 week!',
     date: 'Jun 26, 2025',
     image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80',
     desc: 'After a major overhaul, 2 LM5000 gas turbines left our Workshop within 1 week. This achievement highlights our team’s efficiency and expertise.'

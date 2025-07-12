@@ -17,32 +17,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {/* Header */}
-        <header className="mfs-header">
-          <div className="mfs-header__left">
+        <header className="energyworld-header">
+          <div className="energyworld-header__left">
             <Link href="/">
-              <img src="https://picsum.photos/50/50" alt="Energy World logo" className="mfs-logo" />
+              <img src="https://picsum.photos/50/50" alt="Energy World logo" className="energyworld-logo" />
             </Link>
-            <span className="mfs-tagline">Empowering a Sustainable Future</span>
+            <span className="energyworld-tagline">Empowering a Sustainable Future</span>
           </div>
-          <div className="mfs-header__center">
-            <div className="mfs-header__contact">
+          <div className="energyworld-header__center">
+            <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}>📱</span>Phone</span>
               <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>+971 589120710</span>
             </div>
-            <div className="mfs-header__contact">
+            <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}>✉️</span>Email</span>
               <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>energyworld.uae@gmail.com</span>
             </div>
           </div>
-          <div className="mfs-header__right">
-            <form className="mfs-search-form">
-              <input type="text" placeholder="Search..." className="mfs-search-input" />
-              <button type="submit" className="mfs-search-btn">Search</button>
+          <div className="energyworld-header__right">
+            <form className="energyworld-search-form">
+              <input type="text" placeholder="Search..." className="energyworld-search-input" />
+              <button type="submit" className="energyworld-search-btn">Search</button>
             </form>
-            <button className="mfs-quote-btn">Request a Quote</button>
-            <span className="mfs-cart">🛒</span>
-            <a href="#" className="mfs-social mfs-linkedin" aria-label="LinkedIn">f<span style={{fontSize:'0.9em'}}>in</span></a>
-            <span className="mfs-supplier-check">Supplier check</span>
+            <button className="energyworld-quote-btn">Request a Quote</button>
+            <span className="energyworld-cart">🛒</span>
+            <a href="#" className="energyworld-social energyworld-linkedin" aria-label="LinkedIn">f<span style={{fontSize:'0.9em'}}>in</span></a>
+            <span className="energyworld-supplier-check">Supplier check</span>
           </div>
         </header>
         {/* Navigation */}
@@ -50,31 +50,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Remove boxed parent, render children directly */}
         {children}
         {/* Footer */}
-        <footer className="mfs-footer">
-          <div className="mfs-footer__top">
-            <div className="mfs-footer__col">
-              <img src="https://picsum.photos/50/50" alt="Energy World logo" className="mfs-footer-logo" />
+        <footer className="energyworld-footer">
+          <div className="energyworld-footer__top">
+            <div className="energyworld-footer__col">
+              <img src="https://picsum.photos/50/50" alt="Energy World logo" className="energyworld-footer-logo" />
               <div>Empowering a Sustainable Future</div>
             </div>
-            <div className="mfs-footer__col">
+            <div className="energyworld-footer__col">
               <div><b>Contact</b></div>
               <div>energyworld.uae@gmail.com</div>
               <div>+971 589120710</div>
             </div>
-            <div className="mfs-footer__col">
+            <div className="energyworld-footer__col">
               <div><b>Address</b></div>
               <div>Netherlands HQ</div>
               <div>India Office</div>
               <div>Mexico Office</div>
             </div>
-            <div className="mfs-footer__col">
+            <div className="energyworld-footer__col">
               <div><b>Quick Links</b></div>
               <div><Link href="/about">About</Link></div>
               <div><Link href="/services">Services</Link></div>
               <div><Link href="/contact">Contact</Link></div>
             </div>
           </div>
-          <div className="mfs-footer__bottom">
+          <div className="energyworld-footer__bottom">
             <div>© 2025 Energy World. All rights reserved.</div>
           </div>
         </footer>

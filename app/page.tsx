@@ -133,9 +133,9 @@ export default function HomePage() {
         {/* Left column */}
         <div style={{ flex: 2, minWidth: 320 }}>
           <h2 style={{ color: '#20539b', fontWeight: 800, marginBottom: '1.2rem' }}>We take care of power!</h2>
-          <p>MFS, founded in the Netherlands in 2001 is specialized in gas turbine maintenance, services, parts, site management, consultancy and training.</p>
+          <p>Energy World, founded in the Netherlands in 2001 is specialized in gas turbine maintenance, services, parts, site management, consultancy and training.</p>
           <p>We have 20+ years’ experience as a worldwide, independently operating organization in the gas turbine market. Including oil & gas installations, power generation plants and commercial marine propulsion. To ensure immediate response to your needs, our experienced and skilled engineers, specialized in Aeroderivative and Heavy Duty gas turbines, are 24/7 available. Watch our corporate movie <a href="#" style={{ color: '#20539b', textDecoration: 'underline' }}>here</a>.</p>
-          <p>It is our mission to improve your profitability, reduce the downtime of your gas turbine and decrease your total cost of ownership. From our head office and workshop in the Netherlands and our subsidiaries in France, Pakistan and Mexico, MFS offers you:</p>
+          <p>It is our mission to improve your profitability, reduce the downtime of your gas turbine and decrease your total cost of ownership. From our head office and workshop in the Netherlands and our subsidiaries in France, Pakistan and Mexico, Energy World offers you:</p>
           <ul style={{ listStyle: 'square', color: '#20539b', marginLeft: 20, fontSize: '1.08rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem 2.5rem', padding: 0 }}>
             <li style={{ minWidth: 220 }}><Link href="/services/maintenance">Field and Workshop services</Link></li>
             <li style={{ minWidth: 220 }}><Link href="/parts-tooling">Parts & Tooling</Link></li>
