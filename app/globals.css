@@ -1482,3 +1482,31 @@ li.has-dropdown {
 .energyworld-nav__list > li:not(:hover):not(.active) > span::after {
   display: none !important;
 }
+
+/* Fix blue underline lingering on desktop */
+.energyworld-nav__list > li:not(:hover):not(.active) > a::after,
+.energyworld-nav__list > li:not(:hover):not(.active) > span::after {
+  display: none !important;
+}
+
+/* Fix mobile submenu to open centered below parent, and ensure desktop blue underline is removed when not hovered/active. Also, close mobile menu after navigation by updating Navbar.tsx next. */
+@media (max-width: 900px) {
+  .energyworld-nav__list .dropdown,
+  .energyworld-nav__list .dropdown.right,
+  .energyworld-nav__list .dropdown.wide {
+    position: static !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: auto !important;
+    box-shadow: none !important;
+    background: #20539b !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    transform: none !important;
+    display: none;
+  }
+  .energyworld-nav__list .dropdown.open {
+    display: block !important;
+  }
+}
