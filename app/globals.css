@@ -952,7 +952,7 @@ ul li, .card-list li {
 .energyworld-nav__list > li.has-dropdown > span .arrow,
 .has-dropdown > span .arrow {
   color: #fff !important;
-  transition: color 0.2s;
+  transition: none;
 }
 .energyworld-nav__list > li.has-dropdown > span:hover .arrow,
 .has-dropdown > span:hover .arrow,
@@ -1543,4 +1543,49 @@ li.has-dropdown {
   display: none !important;
   background: none !important;
   height: 0 !important;
+}
+
+/* --- MENU HOVER/ACTIVE FIX --- */
+.energyworld-nav__list > li > a,
+.energyworld-nav__list > li > span {
+  background: #20539b;
+  transition: background 0.2s;
+}
+.energyworld-nav__list > li:hover > a,
+.energyworld-nav__list > li:hover > span,
+.energyworld-nav__list > li.active > a,
+.energyworld-nav__list > li.active > span {
+  background: #2d6ad6;
+}
+.energyworld-nav__list > li:not(:hover):not(.active) > a,
+.energyworld-nav__list > li:not(:hover):not(.active) > span {
+  background: #20539b;
+}
+
+.energyworld-nav__list > li > a::after,
+.energyworld-nav__list > li > span::after {
+  content: '';
+  display: none;
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 0;
+  height: 3px;
+  background: #20539b;
+  border-radius: 2px 2px 0 0;
+}
+.energyworld-nav__list > li:hover > a::after,
+.energyworld-nav__list > li:hover > span::after,
+.energyworld-nav__list > li.active > a::after,
+.energyworld-nav__list > li.active > span::after {
+  display: block;
+}
+
+/* Remove blue line from submenus and when not hovered/active */
+.energyworld-nav__list > li:not(:hover):not(.active) > a::after,
+.energyworld-nav__list > li:not(:hover):not(.active) > span::after {
+  display: none !important;
+}
+span.arrow:hover {
+    background: #1a437a !important; /* Change to a different color on hover */
 }
