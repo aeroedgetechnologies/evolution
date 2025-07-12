@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -35,18 +38,59 @@ export default function ContactPage() {
   };
 
   return (
-    <div style={{ padding: '2rem', maxWidth: 500, margin: '0 auto' }}>
-      <h1>Contact</h1>
-      <p>Email: info@mfsupport.com</p>
-      <p>Phone: +31 (0) 26 479 999 9</p>
-      <form style={{ marginTop: '2rem' }} onSubmit={handleSubmit}>
-        <label>Name:<br /><input type="text" name="name" value={form.name} onChange={handleChange} required /></label><br /><br />
-        <label>Email:<br /><input type="email" name="email" value={form.email} onChange={handleChange} required /></label><br /><br />
-        <label>Message:<br /><textarea name="message" rows={4} value={form.message} onChange={handleChange} required /></label><br /><br />
-        <button type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send'}</button>
-      </form>
-      {success && <div style={{ color: 'green', marginTop: '1rem' }}>{success}</div>}
-      {error && <div style={{ color: 'red', marginTop: '1rem' }}>{error}</div>}
-    </div>
+    <main style={{ width: '100%', minHeight: '70vh', background: '#f8fafc', margin: 0, padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%', maxWidth: 1100, background: '#fff', borderRadius: 16, boxShadow: '0 4px 32px rgba(0,0,0,0.07)', overflow: 'hidden', margin: '2.5rem 0' }}>
+        {/* Left: Contact Form */}
+        <div style={{ flex: 1, minWidth: 320, padding: '2.5rem 2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <h1 style={{ color: '#20539b', fontWeight: 800, fontSize: '2rem', marginBottom: '0.5rem' }}>Contact Energy World</h1>
+          <div style={{ color: '#20539b', fontWeight: 500, marginBottom: '1.2rem' }}>We'd love to hear from you! Fill out the form and our team will get back to you soon.</div>
+          <div style={{ marginBottom: '1.2rem', color: '#222', fontSize: '1.08rem' }}>
+            <div><b>Email:</b> energyworld.uae@gmail.com</div>
+            <div><b>Phone:</b> +971 589120710</div>
+          </div>
+          <form style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.1rem' }} onSubmit={handleSubmit}>
+            <label style={{ fontWeight: 600, color: '#20539b' }}>Name
+              <input type="text" name="name" value={form.name} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
+            </label>
+            <label style={{ fontWeight: 600, color: '#20539b' }}>Email
+              <input type="email" name="email" value={form.email} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
+            </label>
+            <label style={{ fontWeight: 600, color: '#20539b' }}>Message
+              <textarea name="message" rows={4} value={form.message} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem', resize: 'vertical' }} />
+            </label>
+            <button type="submit" disabled={loading} style={{ background: '#20539b', color: '#fff', border: 'none', borderRadius: 6, padding: '0.8rem 0', fontWeight: 700, fontSize: '1.08rem', cursor: 'pointer', marginTop: 8, transition: 'background 0.2s' }}>{loading ? 'Sending...' : 'Send Message'}</button>
+          </form>
+          {success && <div style={{ color: 'green', marginTop: '1rem', fontWeight: 600 }}>{success}</div>}
+          {error && <div style={{ color: 'red', marginTop: '1rem', fontWeight: 600 }}>{error}</div>}
+        </div>
+        {/* Right: Fixed Picsum Image */}
+        <div style={{ flex: 1, minWidth: 320, background: '#e6f0fa', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
+          <Image src="https://picsum.photos/id/1040/600/600" alt="Solar Panels - Contact Energy World" width={400} height={400} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
+        </div>
+      </div>
+      {/* Responsive styles */}
+      <style>{`
+        @media (max-width: 900px) {
+          div[style*='max-width: 1100px'] {
+            flex-direction: column !important;
+            border-radius: 0 !important;
+            margin: 0 !important;
+          }
+          div[style*='min-width: 320px'][style*='background: #e6f0fa'] {
+            min-height: 220px !important;
+            padding: 1.5rem 0 !important;
+          }
+        }
+        @media (max-width: 600px) {
+          div[style*='max-width: 1100px'] {
+            padding: 0 !important;
+          }
+          div[style*='min-width: 320px'][style*='background: #e6f0fa'] {
+            min-height: 120px !important;
+            padding: 1rem 0 !important;
+          }
+        }
+      `}</style>
+    </main>
   );
 } 
