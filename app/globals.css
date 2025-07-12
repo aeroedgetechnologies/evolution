@@ -1467,7 +1467,7 @@ li.has-dropdown {
 .energyworld-nav__list > li > a::after,
 .energyworld-nav__list > li > span::after {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   left: 8%;
   right: 8%;
@@ -1475,6 +1475,17 @@ li.has-dropdown {
   height: 3px;
   background: #20539b;
   border-radius: 2px 2px 0 0;
+}
+.energyworld-nav__list > li:hover > a::after,
+.energyworld-nav__list > li.active > a::after,
+.energyworld-nav__list > li:hover > span::after,
+.energyworld-nav__list > li.active > span::after {
+  display: block;
+}
+/* Never show underline for submenu items */
+.energyworld-nav__list .dropdown li > a::after,
+.energyworld-nav__list .dropdown li > span::after {
+  display: none !important;
 }
 
 /* Strong override: never show ::after in dropdowns or submenus */
@@ -1588,4 +1599,32 @@ li.has-dropdown {
 }
 span.arrow:hover {
     background: #1a437a !important; /* Change to a different color on hover */
+}
+ul.dropdown.wide li:hover {
+    background-color: #20539b !important;
+}
+
+ul.dropdown.wide li a:hover {
+    background-color: #20539b !important;
+    color: white !important;
+}
+
+ul.dropdown.wide li.has-dropdown:hover > span,
+ul.dropdown.wide li.has-dropdown:hover > span.arrow {
+    background-color: #20539b !important;
+    color: white !important;
+}
+
+ul.dropdown.wide li.has-dropdown:hover > .dropdown {
+    background-color: #20539b !important;
+}
+
+ul.dropdown.wide li.has-dropdown:hover > .dropdown li a {
+    background-color: #20539b !important;
+    color: white !important;
+}
+
+ul.dropdown.wide li.has-dropdown .dropdown li a:hover {
+    background-color: #20539b !important;
+    color: white !important;
 }

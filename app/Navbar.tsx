@@ -40,7 +40,24 @@ export default function Navbar() {
     if (!isMobile) setHoveredDropdowns((prev) => ({ ...prev, [level]: key }));
   };
   const handleMouseLeave = (level: string) => {
-    if (!isMobile) setHoveredDropdowns((prev) => ({ ...prev, [level]: null }));
+    if (!isMobile) {
+      setHoveredDropdowns((prev) => {
+        // Remove the hovered state for this level and all child levels
+        const newState = { ...prev };
+        newState[level] = null;
+        // Optionally clear all sub-levels
+        if (level === 'main') {
+          newState['services'] = null;
+        }
+        if (level === 'services') {
+          newState['aero'] = null;
+          newState['heavy'] = null;
+          newState['references'] = null;
+          newState['news'] = null;
+        }
+        return newState;
+      });
+    }
   };
 
   // Add this helper inside the Navbar component
