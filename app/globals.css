@@ -1628,3 +1628,18 @@ ul.dropdown.wide li.has-dropdown .dropdown li a:hover {
     background-color: #20539b !important;
     color: white !important;
 }
+
+.mobile-menu-wrapper {
+  display: none;
+}
+.desktop-navbar-wrapper {
+  display: block;
+}
+@media (max-width: 900px) {
+  .mobile-menu-wrapper {
+    display: block;
+  }
+  .desktop-navbar-wrapper {
+    display: none;
+  }
+}

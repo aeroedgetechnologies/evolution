@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from 'next/link';
 import Navbar from './Navbar';
+import MobileMenuWrapper from './MobileMenuWrapper';
 
 export const metadata: Metadata = {
   title: "Energy World",
@@ -45,8 +46,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span className="energyworld-supplier-check">Supplier check</span>
           </div>
         </header>
-        {/* Navigation */}
-        <Navbar />
+        {/* Mobile Menu (shows only on mobile) */}
+        <div className="mobile-menu-wrapper">
+          <MobileMenuWrapper />
+        </div>
+        {/* Desktop Navbar (hidden on mobile) */}
+        <div className="desktop-navbar-wrapper">
+          <Navbar />
+        </div>
         {/* Remove boxed parent, render children directly */}
         {children}
         {/* Footer */}
@@ -69,8 +76,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="energyworld-footer__col">
               <div><b>Quick Links</b></div>
-              <div style={{ marginBottom: '0.5em' }}>
-                <Link href="/about" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>About</Link>
+              <div style={{ marginBottom: '0.5em' }}>0  u
+ 2              <Link href="/about" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>About</Link>
               </div>
               <div style={{ marginBottom: '0.5em' }}>
                 <Link href="/services" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Services</Link>
