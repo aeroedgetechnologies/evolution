@@ -64,8 +64,8 @@ export default function ContactPage() {
           {error && <div style={{ color: 'red', marginTop: '1rem', fontWeight: 600 }}>{error}</div>}
         </div>
         {/* Right: Fixed Picsum Image */}
-        <div style={{ flex: 1, minWidth: 320, background: '#e6f0fa', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
-          <Image src="https://picsum.photos/id/1040/600/600" alt="Solar Panels - Contact Energy World" width={400} height={400} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
+        <div style={{ flex: 1, minWidth: 320, background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
+          <Image src="/images/contact.png" alt="Solar Panels - Contact Energy World" width={500} height={600} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
         </div>
       </div>
       {/* Responsive styles */}

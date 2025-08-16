@@ -74,6 +74,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>India Office</div>
               <div>Finland Office</div>
             </div>
+            <div className="energyworld">
+              <div><b>Address</b></div>
+              <div>Office C1 1F SF 1087</div>
+              <div>Ajman, C1 Building No. 4442612247</div>
+              <div>United Arab Emirates</div>
+            </div>
             {/* <div className="energyworld-footer__col">
               <div><b>Quick Links</b></div>
               <div style={{ marginBottom: '0.5em' }}>0  u
