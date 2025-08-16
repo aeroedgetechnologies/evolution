@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>United Arab Emirates</div>
             </div>
           </div>
-          <div className="energyworld-footer__bottom">
+          {/* <div className="energyworld-footer__bottom">
             <div>© 2025 Energy World. All rights reserved.</div>
             <div style={{
               fontSize: '1.08em',
@@ -109,7 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Govinda Yadav
               </a>
             </div>
-          </div>
+          </div> */}
         </footer>
 
         {/* WhatsApp Floating Button */}
