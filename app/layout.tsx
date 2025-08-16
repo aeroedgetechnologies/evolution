@@ -74,26 +74,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>India Office</div>
               <div>Finland Office</div>
             </div>
-            <div className="energyworld">
-              <div><b>Address</b></div>
+            <div className="energyworld-footer__col">
+              <div><b>Office Address</b></div>
               <div>Office C1 1F SF 1087</div>
               <div>Ajman, C1 Building No. 4442612247</div>
               <div>United Arab Emirates</div>
             </div>
-            {/* <div className="energyworld-footer__col">
-              <div><b>Quick Links</b></div>
-              <div style={{ marginBottom: '0.5em' }}>0  u
- 2              <Link href="/about" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>About</Link>
-              </div>
-              <div style={{ marginBottom: '0.5em' }}>
-                <Link href="/services" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Services</Link>
-              </div>
-              <div>
-                <Link href="/contact" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Contact</Link>
-              </div>
-            </div> */}
           </div>
-          {/* <div className="energyworld-footer__bottom">
+          <div className="energyworld-footer__bottom">
             <div>© 2025 Energy World. All rights reserved.</div>
             <div style={{
               fontSize: '1.08em',
@@ -121,7 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 Govinda Yadav
               </a>
             </div>
-          </div> */}
+          </div>
         </footer>
 
         {/* WhatsApp Floating Button */}
@@ -131,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             position: 'fixed',
             bottom: '30px',
             right: '30px',
-            zIndex: 1000,
+            zIndex: 9999,
             animation: 'pulse 2s infinite',
           }}
         >
