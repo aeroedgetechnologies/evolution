@@ -1,0 +1,165 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Link from 'next/link';
+import Navbar from './Navbar';
+import MobileMenuWrapper from './MobileMenuWrapper';
+
+export const metadata: Metadata = {
+  title: "Energy World",
+  description: "Energy World - Energy Solutions, Services, Parts, and Tooling",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/Energy World.jpg" type="image/png" />
+      </head>
+      <body>
+        {/* Header */}
+        <header className="energyworld-header">
+          <div className="energyworld-header__left">
+            <Link href="/">
+              <img src="/images/Energy World.jpg" alt="Energy World logo" className="energyworld-logo" />
+            </Link>
+            <span className="energyworld-tagline">Empowering a Sustainable Future</span>
+          </div>
+          <div className="energyworld-header__center">
+            <div className="energyworld-header__contact">
+              <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}>☎️</span>Phone</span>
+              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>+971 589120710</span>
+            </div>
+            <div className="energyworld-header__contact">
+              <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}>✉️</span>Email</span>
+              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>office.uae@energyworld.ltd</span>
+            </div>
+          </div>
+          <div className="energyworld-header__right">
+            <form className="energyworld-search-form">
+              <input type="text" placeholder="Search..." className="energyworld-search-input" />
+              <button type="submit" className="energyworld-search-btn">Search</button>
+            </form>
+            <button className="energyworld-quote-btn">Request a Quote</button>
+            {/* <span className="energyworld-cart">🛒</span> */}
+            {/* <a href="#" className="energyworld-social energyworld-linkedin" aria-label="LinkedIn">f<span style={{fontSize:'0.9em'}}>in</span></a> */}
+            {/* <span className="energyworld-supplier-check">Supplier check</span> */}
+          </div>
+        </header>
+        {/* Mobile Menu (shows only on mobile) */}
+        <div className="mobile-menu-wrapper">
+          <MobileMenuWrapper />
+        </div>
+        {/* Desktop Navbar (hidden on mobile) */}
+        <div className="desktop-navbar-wrapper">
+          <Navbar />
+        </div>
+        {/* Remove boxed parent, render children directly */}
+        {children}
+        {/* Footer */}
+        <footer className="energyworld-footer">
+          <div className="energyworld-footer__top">
+            <div className="energyworld-footer__col">
+              <img src="/images/Energy World.jpg" alt="Energy World logo" className="energyworld-footer-logo" />
+              <div>Empowering a Sustainable Future</div>
+            </div>
+            <div className="energyworld-footer__col">
+              <div><b>Contact</b></div>
+              <div>office.uae@energyworld.ltd</div>
+              <div>+971 589120710</div>
+            </div>
+            <div className="energyworld-footer__col">
+              <div><b>Address</b></div>
+              <div>UAE HQ</div>
+              <div>India Office</div>
+              <div>Finland Office</div>
+            </div>
+            {/* <div className="energyworld-footer__col">
+              <div><b>Quick Links</b></div>
+              <div style={{ marginBottom: '0.5em' }}>0  u
+ 2              <Link href="/about" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>About</Link>
+              </div>
+              <div style={{ marginBottom: '0.5em' }}>
+                <Link href="/services" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Services</Link>
+              </div>
+              <div>
+                <Link href="/contact" style={{ textDecoration: 'none', color: '#fff', fontWeight: 500 }}>Contact</Link>
+              </div>
+            </div> */}
+          </div>
+          {/* <div className="energyworld-footer__bottom">
+            <div>© 2025 Energy World. All rights reserved.</div>
+            <div style={{
+              fontSize: '1.08em',
+              color: '#fff',
+              marginTop: 4,
+              fontWeight: 600,
+              letterSpacing: '0.01em'
+            }}>
+              Developed by{' '}
+              <a
+                href="https://govindayadavfolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#5fa8d3',
+                  fontWeight: 600,
+                  fontSize: '1.08em',
+                  cursor: 'pointer',
+                  textDecoration: 'none',
+                  border: 'none',
+                  background: 'none',
+                  padding: 0,
+                }}
+              >
+                Govinda Yadav
+              </a>
+            </div>
+          </div> */}
+        </footer>
+
+        {/* WhatsApp Floating Button */}
+        <div
+          className="whatsapp-button"
+          style={{
+            position: 'fixed',
+            bottom: '30px',
+            right: '30px',
+            zIndex: 1000,
+            animation: 'pulse 2s infinite',
+          }}
+        >
+          <a
+            href="https://wa.me/971589120710"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '70px',
+              height: '70px',
+              backgroundColor: '#25D366',
+              borderRadius: '50%',
+              boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)',
+              textDecoration: 'none',
+              transition: 'all 0.3s ease',
+            }}
+          >
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="white"
+              style={{
+                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))',
+              }}
+            >
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+          </a>
+        </div>
+      </body>
+    </html>
+  );
+}
