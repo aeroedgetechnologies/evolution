@@ -81,25 +81,25 @@ export default function PartFinderPage() {
           </div>
         </div>
         
-<div style={{ textAlign: 'center' }}>
-  <button 
-    disabled
-    title="Under Maintenance"
-    style={{ 
-      background: '#A0AEC0', // grayed out
-      color: '#EDF2F7', 
-      padding: '0.75rem 2rem', 
-      border: 'none', 
-      borderRadius: '6px', 
-      fontSize: '1rem',
-      fontWeight: '500',
-      cursor: 'not-allowed', 
-      opacity: 0.6
-    }}
-  >
-    Search Parts
-  </button>
-</div>
+        <div style={{ textAlign: 'center' }}>
+<button 
+  disabled
+  style={{ 
+    background: '#a0aec0', // gray background to indicate disabled
+    color: 'white', 
+    padding: '0.75rem 2rem', 
+    border: 'none', 
+    borderRadius: '6px', 
+    fontSize: '1rem',
+    fontWeight: '500',
+    cursor: 'not-allowed', // indicates it's not clickable
+    opacity: 0.7 // slightly faded look
+  }}
+>
+  Under Maintenance
+</button>
+        </div>
+      </div>
 
       {/* Featured Parts */}
       <div style={{ marginBottom: '3rem' }}>
@@ -144,7 +144,8 @@ export default function PartFinderPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer'
+                  cursor: 'not-allowed',
                 }}>
                   View Details
                 </button>
@@ -190,7 +191,8 @@ export default function PartFinderPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer'
+                  cursor: 'not-allowed',
                 }}>
                   View Details
                 </button>
@@ -236,10 +238,11 @@ export default function PartFinderPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer'
+                  cursor: 'not-allowed',
                 }}>
                   View Details
-                </button>
+                </button>Energy World is specialized in Energy Solutions, Services, Parts and Tooling
               </div>
             </div>
           </div>

@@ -62,9 +62,10 @@ export default function OffersPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer'
+                      cursor: 'not-allowed', // indicates it's not clickable
                 }}>
-                  Claim Offer
+                  Get RFQs
                 </button>
               </div>
             </div>
@@ -82,9 +83,10 @@ export default function OffersPage() {
               borderRadius: '20px', 
               fontSize: '0.9rem',
               fontWeight: '600',
-              zIndex: '1'
+              zIndex: '1',
+              cursor: 'not-allowed',
             }}>
-              BUNDLE DEAL
+              Get RFQs
             </div>
             <div style={{ position: 'relative' }}>
               <Image 
@@ -100,10 +102,10 @@ export default function OffersPage() {
               <p style={{ color: '#4a5568', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 Full maintenance tooling kit with borescope inspection equipment and specialty hand tools.
               </p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+              {/* <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                 <span style={{ textDecoration: 'line-through', color: '#a0aec0' }}>$18,500</span>
                 <span style={{ color: '#38a169', fontWeight: '600', fontSize: '1.2rem' }}>$14,800</span>
-              </div>
+              </div> */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ color: '#38a169', fontWeight: '600', fontSize: '0.9rem' }}>Free Shipping</span>
                 <button style={{ 
@@ -113,9 +115,10 @@ export default function OffersPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer'
+              cursor: 'not-allowed',
                 }}>
-                  Get Bundle
+                  Get RFQs
                 </button>
               </div>
             </div>
@@ -164,9 +167,10 @@ export default function OffersPage() {
                   border: 'none', 
                   borderRadius: '4px', 
                   fontSize: '0.9rem',
-                  cursor: 'pointer'
+                  // cursor: 'pointer',
+              cursor: 'not-allowed',
                 }}>
-                  Rent Now
+                  Get RFQs
                 </button>
               </div>
             </div>
