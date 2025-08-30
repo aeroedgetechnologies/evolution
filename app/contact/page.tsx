@@ -63,9 +63,35 @@ export default function ContactPage() {
           {success && <div style={{ color: 'green', marginTop: '1rem', fontWeight: 600 }}>{success}</div>}
           {error && <div style={{ color: 'red', marginTop: '1rem', fontWeight: 600 }}>{error}</div>}
         </div>
-        {/* Right: Fixed Picsum Image */}
-        <div style={{ flex: 1, minWidth: 320, background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
-          <Image src="/images/contactus.jpg" alt="Solar Panels - Contact Energy World" width={500} height={600} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
+        {/* Right: Contact Image with Border */}
+        <div style={{ flex: 1, minWidth: 320, background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400, padding: '1rem' }}>
+          <div style={{ 
+            background: '#000', 
+            borderRadius: 16, 
+            padding: '2rem', 
+            border: '3px solid #000',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minHeight: '350px',
+            width: '100%',
+            maxWidth: '450px'
+          }}>
+            <Image 
+              src="/images/contactus.jpg" 
+              alt="Gas Turbine - Contact Energy World" 
+              width={400} 
+              height={500} 
+              style={{ 
+                borderRadius: 8, 
+                objectFit: 'contain',
+                border: '2px solid #333',
+                padding: '1rem',
+                background: '#000'
+              }} 
+            />
+          </div>
         </div>
       </div>
       {/* Responsive styles */}
