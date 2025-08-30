@@ -28,7 +28,7 @@ export default function HomePage() {
           role="banner"
         style={{
           width: '100vw',
-          minHeight: 320,
+          minHeight: '100vh',
           maxWidth: '100vw',
           margin: 0,
           padding: 0,
@@ -60,7 +60,7 @@ export default function HomePage() {
         >
           <h1
             style={{
-              fontSize: '2.3rem',
+              fontSize: 'clamp(1.8rem, 4vw, 2.3rem)',
               fontWeight: 800,
               marginBottom: '1.2rem',
               lineHeight: 1.15,
@@ -72,7 +72,7 @@ export default function HomePage() {
           </h1>
           <p
             style={{
-              fontSize: '1.18rem',
+              fontSize: 'clamp(1rem, 2.5vw, 1.18rem)',
               margin: '1.2rem 0',
               fontWeight: 400,
               color: '#fff',
@@ -83,7 +83,7 @@ export default function HomePage() {
           </p>
           <div
             style={{
-              fontSize: '1.1rem',
+              fontSize: 'clamp(1rem, 2.5vw, 1.1rem)',
               marginTop: '2.5rem',
               fontWeight: 500,
               color: '#fff',
@@ -100,8 +100,8 @@ export default function HomePage() {
             flex: 2,
             minWidth: 400,
             position: 'relative',
-            height: 500,
-            minHeight: 320,
+            height: '100vh',
+            minHeight: '100vh',
             overflow: 'hidden',
             maxWidth: 900,
             width: '100%',
@@ -126,13 +126,18 @@ export default function HomePage() {
                 src={img.src}
                 alt={img.alt}
                 width={1600}
-                height={500}
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                height={900}
+                style={{ 
+                  objectFit: 'cover', 
+                  width: '100%', 
+                  height: '100%',
+                  objectPosition: 'center center'
+                }}
                 priority={idx === 0}
               />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-    <span className="text-white text-2xl font-semibold">{img.alt}</span>
-  </div>
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                <span className="text-white text-2xl font-semibold">{img.alt}</span>
+              </div>
             </div>
           ))}
         </div>
@@ -155,7 +160,7 @@ export default function HomePage() {
         >
           <h3
             style={{
-              fontSize: '1.5rem',
+              fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
               fontWeight: 700,
               marginBottom: '1.5rem',
               color: '#fff',
@@ -170,7 +175,7 @@ export default function HomePage() {
               color: '#fff',
               margin: 0,
               padding: 0,
-              fontSize: '1.08rem',
+              fontSize: 'clamp(0.9rem, 2.5vw, 1.08rem)',
             }}
           >
             {sliderImages[current].services.map((service, index) => (
@@ -180,7 +185,7 @@ export default function HomePage() {
                   textShadow: '0 2px 8px #0007', 
                   background: 'none', 
                   border: 'none', 
-                  padding: 0, 
+                  padding: '0.5rem 0', 
                   color: '#fff',
                 }}
               >
@@ -190,6 +195,42 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      {/* Mobile responsive adjustments */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          section[role="banner"] {
+            flex-direction: column;
+            min-height: auto;
+          }
+          
+          section[role="banner"] > div:nth-child(2) {
+            height: 50vh;
+            min-height: 300px;
+            order: -1;
+          }
+          
+          section[role="banner"] > div:first-child,
+          section[role="banner"] > div:last-child {
+            padding: 2rem 1.5rem;
+            max-width: none;
+            min-width: auto;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          section[role="banner"] > div:nth-child(2) {
+            height: 40vh;
+            min-height: 250px;
+          }
+          
+          section[role="banner"] > div:first-child,
+          section[role="banner"] > div:last-child {
+            padding: 1.5rem 1rem;
+          }
+        }
+      `}</style>
+
       {/* Two-column layout below hero */}
       <section 
         aria-label="About Energy World"
@@ -222,7 +263,7 @@ export default function HomePage() {
                 <span>Upcoming events</span>
                 <span style={{ color: '#fff', fontWeight: 400, fontSize: '1.2em', marginLeft: 8 }}>&#8250;</span>
               </div>
-              <img src="/images/a9.jpg" alt="Refurbishment LM5000 shipping containers" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
+              <img src="/images/events.jpg" alt="Refurbishment LM5000 shipping containers" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
               <div style={{ padding: '1rem', color: '#20539b', background: '#fff' }}>
                 <div style={{ color: '#20539b', fontWeight: 700, fontSize: '1.08rem', textDecoration: 'none' }}>Refurbishment LM5000 shipping containers</div>
               </div>

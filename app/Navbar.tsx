@@ -90,6 +90,18 @@ export default function Navbar() {
             {/* <li><Link href="/career" onClick={handleLinkClick}>Career</Link></li> */}
           </ul>
         </li>
+                <li className="has-dropdown"
+          onMouseEnter={() => handleMouseEnter('main', 'parts')}
+          onMouseLeave={() => handleMouseLeave('main')}
+        >
+          <span {...(isMobile ? { onClick: () => toggleSubmenu('main', 'parts') } : {})}>PARTS & TOOLING <span className="arrow">▼</span></span>
+          <ul className={`dropdown${isMobile && isOpen('main', 'parts') ? ' open' : ''}${isDesktopOpen('main', 'parts') ? ' open' : ''}`}>
+            <li><Link href="/parts-tooling" onClick={handleLinkClick}>Parts & Tooling</Link></li>
+            <li><Link href="/parts-tooling/part-finder" onClick={handleLinkClick}>Part Finder</Link></li>
+            <li><Link href="/parts-tooling/tooling" onClick={handleLinkClick}>Tooling</Link></li>
+            <li><Link href="/parts-tooling/offers" onClick={handleLinkClick}>Special Offers</Link></li>
+          </ul>
+        </li>
         <li className="has-dropdown"
           onMouseEnter={() => handleMouseEnter('main', 'services')}
           onMouseLeave={() => handleMouseLeave('main')}
@@ -149,18 +161,6 @@ export default function Navbar() {
                 <li><Link href="/news/press" onClick={handleLinkClick}>Press</Link></li>
               </ul>
             </li> */}
-          </ul>
-        </li>
-        <li className="has-dropdown"
-          onMouseEnter={() => handleMouseEnter('main', 'parts')}
-          onMouseLeave={() => handleMouseLeave('main')}
-        >
-          <span {...(isMobile ? { onClick: () => toggleSubmenu('main', 'parts') } : {})}>PARTS & TOOLING <span className="arrow">▼</span></span>
-          <ul className={`dropdown${isMobile && isOpen('main', 'parts') ? ' open' : ''}${isDesktopOpen('main', 'parts') ? ' open' : ''}`}>
-            <li><Link href="/parts-tooling" onClick={handleLinkClick}>Parts & Tooling</Link></li>
-            <li><Link href="/parts-tooling/part-finder" onClick={handleLinkClick}>Part Finder</Link></li>
-            <li><Link href="/parts-tooling/tooling" onClick={handleLinkClick}>Tooling</Link></li>
-            <li><Link href="/parts-tooling/offers" onClick={handleLinkClick}>Special Offers</Link></li>
           </ul>
         </li>
         <li><Link href="/contact" onClick={handleLinkClick}>CONTACT</Link></li>
