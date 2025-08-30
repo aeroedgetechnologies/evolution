@@ -188,7 +188,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="energyworld-header">
           <div className="energyworld-header__left">
             <Link href="/">
-              <img src="/images/Energy World.jpg" alt="Energy World logo" className="energyworld-logo" />
+              <img src="/images/Energy_World-removebg-preview.png" alt="Energy World logo" className="energyworld-logo" />
             </Link>
             <span className="energyworld-tagline">Empowering a Sustainable Future</span>
           </div>

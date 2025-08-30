@@ -28,7 +28,8 @@ export default function HomePage() {
           role="banner"
         style={{
           width: '100vw',
-          minHeight: '100vh',
+          minHeight: '80vh',
+          maxHeight: '90vh',
           maxWidth: '100vw',
           margin: 0,
           padding: 0,
@@ -100,11 +101,15 @@ export default function HomePage() {
             flex: 2,
             minWidth: 400,
             position: 'relative',
-            height: '70vh',
-            minHeight: '450px',
+            height: '60vh',
+            minHeight: '400px',
+            maxHeight: '600px',
             overflow: 'hidden',
             maxWidth: 900,
             width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           {sliderImages.map((img, idx) => (
@@ -131,7 +136,10 @@ export default function HomePage() {
                   objectFit: 'contain',
                   width: '100%',
                   height: '100%',
-                  objectPosition: 'center center'
+                  objectPosition: 'center center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
                 }}
                 priority={idx === 0}
               />
@@ -202,12 +210,15 @@ export default function HomePage() {
           section[role="banner"] {
             flex-direction: column;
             min-height: auto;
+            height: auto;
           }
           
           section[role="banner"] > div:nth-child(2) {
-            height: 50vh;
-            min-height: 350px;
+            height: 45vh;
+            min-height: 320px;
+            max-height: 450px;
             order: -1;
+            margin-bottom: 0;
           }
           
           section[role="banner"] > div:first-child,
@@ -215,13 +226,15 @@ export default function HomePage() {
             padding: 2rem 1.5rem;
             max-width: none;
             min-width: auto;
+            flex: none;
           }
         }
         
         @media (max-width: 480px) {
           section[role="banner"] > div:nth-child(2) {
-            height: 45vh;
-            min-height: 300px;
+            height: 40vh;
+            min-height: 280px;
+            max-height: 400px;
           }
           
           section[role="banner"] > div:first-child,
@@ -232,8 +245,17 @@ export default function HomePage() {
         
         @media (min-width: 1200px) {
           section[role="banner"] > div:nth-child(2) {
-            height: 65vh;
+            height: 55vh;
+            min-height: 450px;
+            max-height: 550px;
+          }
+        }
+        
+        @media (min-width: 1600px) {
+          section[role="banner"] > div:nth-child(2) {
+            height: 50vh;
             min-height: 500px;
+            max-height: 600px;
           }
         }
       `}</style>

@@ -469,9 +469,10 @@ footer {
 }
 .energyworld-logo {
   height: 48px;
-  width: 48px;
+  width: auto;
+  max-width: 200px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 1rem;
 }
 .energyworld-header__left {
@@ -647,7 +648,8 @@ footer {
   }
   .energyworld-logo {
     height: 32px;
-    width: 32px;
+    width: auto;
+    max-width: 140px;
   }
   .energyworld-header__left {
     gap: 0.5rem;
