@@ -81,21 +81,25 @@ export default function PartFinderPage() {
           </div>
         </div>
         
-        <div style={{ textAlign: 'center' }}>
-          <button style={{ 
-            background: '#3182ce', 
-            color: 'white', 
-            padding: '0.75rem 2rem', 
-            border: 'none', 
-            borderRadius: '6px', 
-            fontSize: '1rem',
-            fontWeight: '500',
-            cursor: 'pointer'
-          }}>
-            Search Parts
-          </button>
-        </div>
-      </div>
+<div style={{ textAlign: 'center' }}>
+  <button 
+    disabled
+    title="Under Maintenance"
+    style={{ 
+      background: '#A0AEC0', // grayed out
+      color: '#EDF2F7', 
+      padding: '0.75rem 2rem', 
+      border: 'none', 
+      borderRadius: '6px', 
+      fontSize: '1rem',
+      fontWeight: '500',
+      cursor: 'not-allowed', 
+      opacity: 0.6
+    }}
+  >
+    Search Parts
+  </button>
+</div>
 
       {/* Featured Parts */}
       <div style={{ marginBottom: '3rem' }}>
