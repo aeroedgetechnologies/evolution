@@ -22,7 +22,10 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero/Banner Slideshow */}
-      <section
+      <main>
+        <section
+          aria-label="Hero Banner with Energy Solutions"
+          role="banner"
         style={{
           width: '100vw',
           minHeight: 320,
@@ -188,9 +191,12 @@ export default function HomePage() {
         </div>
       </section>
       {/* Two-column layout below hero */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: 1300, margin: '2.5rem auto', alignItems: 'flex-start', background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.07)', padding: '2.5rem 2rem' }}>
+      <section 
+        aria-label="About Energy World"
+        style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: 1300, margin: '2.5rem auto', alignItems: 'flex-start', background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.07)', padding: '2.5rem 2rem' }}
+      >
         {/* Left column */}
-        <div style={{ flex: 2, minWidth: 320 }}>
+        <article style={{ flex: 2, minWidth: 320 }}>
           <h2 style={{ color: '#20539b', fontWeight: 800, marginBottom: '1.2rem' }}>We take care of power!</h2>
           <p>Energy World, founded in the UAE in 2014 is specialized in gas turbine maintenance, services, parts, site management, consultancy and training.</p>
           <p>We have years of experience as a worldwide, independently operating organization in the gas turbine market. Including oil & gas installations, power generation plants and commercial marine propulsion. To ensure immediate response to your needs, our experienced and skilled engineers, specialized in Aeroderivative and Heavy Duty gas turbines, are 24/7 available.
@@ -206,17 +212,17 @@ export default function HomePage() {
             {/* <li style={{ minWidth: 220 }}><Link href="/services/epc">EPC Contractor</Link></li> */}
             <li style={{ minWidth: 220 }}><Link href="/services/training">Installation</Link></li>
           </ul>
-        </div>
+        </article>
         {/* Right column */}
-        <div style={{ flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <aside style={{ flex: 1, minWidth: 320, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {/* News box */}
           <Link href="/news" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div style={{ background: '#20539b', borderRadius: 8, color: '#fff', marginBottom: '1.2rem', overflow: 'hidden', cursor: 'pointer' }}>
               <div style={{ padding: '0.8rem 1.2rem', fontWeight: 700, fontSize: '1.15rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span>News</span>
+                <span>Upcoming events</span>
                 <span style={{ color: '#fff', fontWeight: 400, fontSize: '1.2em', marginLeft: 8 }}>&#8250;</span>
               </div>
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Refurbishment LM5000 shipping containers" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
+              <img src="/images/a9.jpg" alt="Refurbishment LM5000 shipping containers" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
               <div style={{ padding: '1rem', color: '#20539b', background: '#fff' }}>
                 <div style={{ color: '#20539b', fontWeight: 700, fontSize: '1.08rem', textDecoration: 'none' }}>Refurbishment LM5000 shipping containers</div>
               </div>
@@ -225,10 +231,11 @@ export default function HomePage() {
           {/* In the spotlight box */}
           <div style={{ background: '#20539b', borderRadius: 8, color: '#fff', overflow: 'hidden' }}>
             <div style={{ padding: '0.8rem 1.2rem', fontWeight: 700, fontSize: '1.15rem' }}>In the spotlight</div>
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=500&q=80" alt="In the spotlight" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
+            <img src="/images/spotlight.jpg" alt="In the spotlight" style={{ width: '100%', height: 160, objectFit: 'cover', display: 'block' }} />
           </div>
-        </div>
-      </div>
+        </aside>
+      </section>
+      </main>
     </div>
   );
 }
