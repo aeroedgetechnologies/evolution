@@ -109,21 +109,13 @@ export default function PartFinderPage() {
           {/* Hot Section Components */}
           <div style={{ background: 'white', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
             <div style={{ position: 'relative' }}>
-<Image 
-  src="/images/a7.jpg" 
-  alt="Hot Section Components" 
-  fill 
-  style={{ 
-    objectFit: 'cover',
-    borderRadius: '12px',
-    width: '100%',
-    aspectRatio: '16/9', // Ensures it stays landscape
-    height: 'auto',
-    position: 'relative'
-  }}
-  sizes="(max-width: 768px) 100vw, 50vw"
-/>
-
+              <Image 
+                src="/images/a7.jpg" 
+                alt="Hot Section Components" 
+                width={400} 
+                height={250} 
+                style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+              />
               <div style={{ 
                 position: 'absolute', 
                 top: '1rem', 
