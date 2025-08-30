@@ -28,8 +28,7 @@ export default function HomePage() {
           role="banner"
         style={{
           width: '100vw',
-          minHeight: '80vh',
-          maxHeight: '90vh',
+          minHeight: 'auto',
           maxWidth: '100vw',
           margin: 0,
           padding: 0,
@@ -51,7 +50,8 @@ export default function HomePage() {
             minWidth: 280,
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
             color: '#fff',
             zIndex: 2,
             position: 'relative',
@@ -101,15 +101,15 @@ export default function HomePage() {
             flex: 2,
             minWidth: 400,
             position: 'relative',
-            height: '60vh',
+            height: 'auto',
             minHeight: '400px',
-            maxHeight: '600px',
             overflow: 'hidden',
             maxWidth: 900,
             width: '100%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            alignSelf: 'stretch',
           }}
         >
           {sliderImages.map((img, idx) => (
@@ -157,7 +157,8 @@ export default function HomePage() {
             minWidth: 280,
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
             color: '#fff',
             zIndex: 2,
             position: 'relative',
