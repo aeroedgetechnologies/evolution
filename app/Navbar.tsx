@@ -138,7 +138,7 @@ export default function Navbar() {
             <li><Link href="/services/operation" onClick={handleLinkClick}>Operation & Maintenance</Link></li>
             {/* <li><Link href="/services/epc" onClick={handleLinkClick}>EPC Contractor</Link></li> */}
             <li><Link href="/services/training" onClick={handleLinkClick}>Training</Link></li>
-            <li><Link href="/services/terms" onClick={handleLinkClick}>Terms & Conditions</Link></li>
+            {/* <li><Link href="/services/terms" onClick={handleLinkClick}>Terms & Conditions</Link></li> */}
             {/* <li className="has-dropdown"
               onMouseEnter={() => handleMouseEnter('services', 'references')}
               onMouseLeave={() => handleMouseLeave('services')}
