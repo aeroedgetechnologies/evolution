@@ -65,7 +65,7 @@ export default function ContactPage() {
         </div>
         {/* Right: Fixed Picsum Image */}
         <div style={{ flex: 1, minWidth: 320, background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
-          <Image src="/images/contactus.png" alt="Solar Panels - Contact Energy World" width={500} height={600} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
+          <Image src="/images/contactus.jpg" alt="Solar Panels - Contact Energy World" width={500} height={600} style={{ borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 16px rgba(32,83,155,0.10)' }} />
         </div>
       </div>
       {/* Responsive styles */}

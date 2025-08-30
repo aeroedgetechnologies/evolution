@@ -94,14 +94,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Center column - Image slideshow */}
+                {/* Center column - Image slideshow */}
         <div
           style={{
             flex: 2,
             minWidth: 400,
             position: 'relative',
-            height: '100vh',
-            minHeight: '100vh',
+            height: '70vh',
+            minHeight: '450px',
             overflow: 'hidden',
             maxWidth: 900,
             width: '100%',
@@ -127,9 +127,9 @@ export default function HomePage() {
                 alt={img.alt}
                 width={1600}
                 height={900}
-                style={{ 
-                  objectFit: 'cover', 
-                  width: '100%', 
+                style={{
+                  objectFit: 'contain',
+                  width: '100%',
                   height: '100%',
                   objectPosition: 'center center'
                 }}
@@ -206,7 +206,7 @@ export default function HomePage() {
           
           section[role="banner"] > div:nth-child(2) {
             height: 50vh;
-            min-height: 300px;
+            min-height: 350px;
             order: -1;
           }
           
@@ -220,13 +220,20 @@ export default function HomePage() {
         
         @media (max-width: 480px) {
           section[role="banner"] > div:nth-child(2) {
-            height: 40vh;
-            min-height: 250px;
+            height: 45vh;
+            min-height: 300px;
           }
           
           section[role="banner"] > div:first-child,
           section[role="banner"] > div:last-child {
             padding: 1.5rem 1rem;
+          }
+        }
+        
+        @media (min-width: 1200px) {
+          section[role="banner"] > div:nth-child(2) {
+            height: 65vh;
+            min-height: 500px;
           }
         }
       `}</style>
