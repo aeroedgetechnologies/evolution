@@ -1,0 +1,27 @@
+{
+  "name": "Energy World - Energy Solutions, Services, Parts and Tooling",
+  "short_name": "Energy World",
+  "description": "Energy World is specialized in Energy Solutions, Services, Parts and Tooling. Empowering a Sustainable Future with decades of experience in gas turbines, power generation, and industrial applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#20539b",
+  "theme_color": "#20539b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/Energy World.jpg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/Energy World.jpg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "energy", "industrial", "technology"],
+  "lang": "en",
+  "dir": "ltr"
+}
