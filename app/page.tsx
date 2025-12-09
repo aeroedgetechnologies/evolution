@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import Link from 'next/link';
 
 const sliderImages = [
-  { src: "/images/LM6000.jpg", alt: "LM6000", services: ["Gas Turbine Maintenance", "Parts & Tooling Supply", "Service Agreements", "Training & Consultancy", "Global 24/7 Support", "EPC Contracting"] },
-  { src: "/images/GE_LM2500.jpg", alt: "GE LM2500", services: ["Aeroderivative Solutions", "Marine Propulsion", "Power Generation", "Oil & Gas Installations", "Field Services", "Workshop Services"] },
-  { src: "/images/6BGE.png", alt: "6BGE", services: ["Heavy Duty Turbines", "Industrial Applications", "Energy Efficiency", "Maintenance Contracts", "Technical Support", "Spare Parts"] },
+  { src: "/images/LM60001.jpg", alt: "LM6000", services: ["Gas Turbine Maintenance", "Parts & Tooling Supply", "Service Agreements", "Training & Consultancy", "Global 24/7 Support", "EPC Contracting"] },
+  { src: "/images/LM60002.jpg", alt: "GE LM2500", services: ["Aeroderivative Solutions", "Marine Propulsion", "Power Generation", "Oil & Gas Installations", "Field Services", "Workshop Services"] },
+  { src: "/images/LM60003.jpg", alt: "6BGE", services: ["Heavy Duty Turbines", "Industrial Applications", "Energy Efficiency", "Maintenance Contracts", "Technical Support", "Spare Parts"] },
 ];
 
 export default function HomePage() {
