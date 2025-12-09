@@ -587,7 +587,7 @@ footer {
 }
 .energyworld-footer__col {
   min-width: 180px;
-  flex: 1 1 180px;
+  /* flex: 1 1 180px; */
   margin-bottom: 1rem;
 }
 .energyworld-footer-logo {
