@@ -146,16 +146,6 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
     background: #27516b !important;
 }
 
-.energyworld-nav__list>li.has-dropdown>span, .has-dropdown>span {
-    background: #27516b !important;
-}
-.energyworld-nav, .energyworld-nav__list {
-    background: #27516b !important;
-}
-
-.energyworld-nav__list>li, .energyworld-nav__list>li>a, .energyworld-nav__list>li>span {
-    background: #27516b !important;
-}
 
 /* Responsive Design */
 @media (max-width: 900px) {
