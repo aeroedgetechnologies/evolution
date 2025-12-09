@@ -143,7 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "ContactPoint",
                 "telephone": "+971 589120710",
                 "contactType": "customer service",
-                "email": "office.uae@energyworld.ltd",
+                "email": "info@energyworld.ltd",
                 "availableLanguage": "English"
               },
               "sameAs": [
@@ -199,7 +199,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}></span>Email <span>|</span></span>
-              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>office.uae@energyworld.ltd</span>
+              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>info@energyworld.ltd</span>
             </div>
             {/* <form className="energyworld-search-form">
               <input type="text" placeholder="Search..." className="energyworld-search-input" />
@@ -232,7 +232,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="energyworld-footer__col">
               <div><b>Contact</b></div>
-              <div>office.uae@energyworld.ltd</div>
+              <div>info@energyworld.ltd</div>
               <div>+971 589120710</div>
             </div>
             <div className="energyworld-footer__col">
@@ -291,7 +291,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "description": "Energy World is specialized in Energy Solutions, Services, Parts and Tooling. Leading provider of gas turbine maintenance, power generation, and industrial applications.",
               "url": "https://energyworld.ltd",
               "telephone": "+971 589120710",
-              "email": "office.uae@energyworld.ltd",
+              "email": "info@energyworld.ltd",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Office C1 1F SF 1087, Ajman, C1 Building No. 4442612247",
