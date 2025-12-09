@@ -155,8 +155,7 @@ ul.energyworld-nav__list li.has-dropdown {
 ul.energyworld-nav__list li.active {
     background: #27516b !important;
 }
-.energyworld-nav__list li,
-.energyworld-nav__list .dropdown li {
+.energyworld-nav__list li {
     background: #27516b !important;
 }
 
