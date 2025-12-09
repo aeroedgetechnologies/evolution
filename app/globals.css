@@ -115,6 +115,33 @@ footer {
     flex: none !important;
     box-sizing: border-box;
 }
+
+section.jsx-d05d2171e76ab7c0 {
+    background: #27516b !important;
+}section.jsx-d05d2171e76ab7c0 h2.jsx-d05d2171e76ab7c0 {
+    color: #d2d2d2 !important;
+}
+
+section.jsx-d05d2171e76ab7c0 p.jsx-d05d2171e76ab7c0 {
+    color: #d2d2d2;
+}
+
+
+.energyworld-header__right span {
+    COLOR: #27516b !IMPORTANT;
+}
+
+
+.energyworld-nav, .energyworld-nav__list {
+    background: #27516b !IMPORTANT;
+}
+
+
+ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
+    background: #d2d2d2 !important;
+    color: #27516b !important;
+    padding: 0.5rem 8px;
+}
 /* Responsive Design */
 @media (max-width: 900px) {
   main {
