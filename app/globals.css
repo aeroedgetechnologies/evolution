@@ -107,6 +107,14 @@ footer {
 .energyworld-nav__list > li > a, .energyworld-nav__list > li > span {
   font-family: sans-serif;
 }
+.featured>div, .news-list>div, ul>li {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    min-width: 200px;
+    flex: none !important;
+    box-sizing: border-box;
+}
 /* Responsive Design */
 @media (max-width: 900px) {
   main {
