@@ -150,10 +150,10 @@ ul.energyworld-nav__list {
 }
 
 ul.energyworld-nav__list li.has-dropdown {
-    background: #27516b;
+    background: #27516b !important;
 }
 ul.energyworld-nav__list li.active {
-    background: #27516b;
+    background: #27516b !important;
 }
 /* Responsive Design */
 @media (max-width: 900px) {
