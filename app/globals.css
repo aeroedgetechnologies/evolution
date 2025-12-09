@@ -140,7 +140,7 @@ section.jsx-d05d2171e76ab7c0 p.jsx-d05d2171e76ab7c0 {
 ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
     background: #d2d2d2 !important;
     color: #27516b !important;
-    padding: 0.5rem 8px;
+    padding: 0.5rem 8px !important;
 }
 
 .energyworld-nav__list>li, .energyworld-nav__list>li>a, .energyworld-nav__list>li>span {
