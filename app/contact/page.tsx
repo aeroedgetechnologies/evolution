@@ -45,7 +45,7 @@ export default function ContactPage() {
           <h1 style={{ color: '#20539b', fontWeight: 800, fontSize: '2rem', marginBottom: '0.5rem' }}>Contact Energy World</h1>
           <div style={{ color: '#20539b', fontWeight: 500, marginBottom: '1.2rem' }}>We'd love to hear from you! Fill out the form and our team will get back to you soon.</div>
           <div style={{ marginBottom: '1.2rem', color: '#222', fontSize: '1.08rem' }}>
-            <div><b>Email:</b> office.uae@energyworld.ltd</div>
+            <div><b>Email:</b> info@energyworld.ltd</div>
             <div><b>Phone:</b> +971 589120710</div>
           </div>
           <form style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.1rem' }} onSubmit={handleSubmit}>
