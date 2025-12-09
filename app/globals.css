@@ -303,7 +303,7 @@ ul.energyworld-nav__list li.active {
 
 .energyworld-tagline {
   font-size: 1.1rem;
-  color: #27516b;
+  color: #27516b !important;
   font-weight: 500;
 }
 
