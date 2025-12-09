@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #f8f9fa;
+  background: #D2D2D2;
   color: #222;
   overflow-x: hidden;
 }
@@ -249,7 +249,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #fff;
+  background: #D2D2D2;
   border-bottom: 3px solid #1a397b;
   flex-wrap: wrap;
 }
