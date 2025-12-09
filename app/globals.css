@@ -142,6 +142,12 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
     color: #27516b !important;
     padding: 0.5rem 8px;
 }
+
+.energyworld-nav__list>li, .energyworld-nav__list>li>a, .energyworld-nav__list>li>span {
+    background: #27516b !important;
+}ul.energyworld-nav__list {
+    background: #27516b !important;
+}
 /* Responsive Design */
 @media (max-width: 900px) {
   main {
