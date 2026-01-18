@@ -1,0 +1,130 @@
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menuDrawer {
+  width: 80vw;
+  max-width: 340px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: slideIn 0.3s cubic-bezier(0.4,0,0.2,1);
+  color: #222;
+  background: #fff;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  font-size: 1.1rem;
+  gap: 1rem;
+  background: #f7faff;
+}
+
+.menuHeader .menuIcon {
+  background: #e6f0fa;
+  color: #20539b;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(32,83,155,0.08);
+  font-size: 1.3rem;
+  border: none;
+  margin-right: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+.menuHeader .menuIcon:hover {
+  background: #20539b;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(32,83,155,0.15);
+}
+
+.menuHeader span {
+  color: #20539b;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.menuList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 0;
+}
+
+.menuItem {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #20539b;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s;
+}
+.menuItem:hover {
+  background: #e6f0fa;
+  color: #111;
+}
+
+.menuFooter {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menuFooter a {
+  color: #20539b;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+.menuFooter a:last-child {
+  margin-right: 0;
+}
+
+.menuIcon {
+  font-size: 1.7rem;
+  color: #20539b; /* blue theme color */
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.menuIcon:hover {
+  background: #e6f0fa;
+}
+
+@media (min-width: 900px) {
+  .menuOverlay {
+    display: none;
+  }
+} 
