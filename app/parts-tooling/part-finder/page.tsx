@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -5,11 +7,6 @@ import { searchParts, getManufacturers, getModels, getCategories, Part } from '.
 import { QuoteModal } from './QuoteModal';
 import { DetailsModal } from './DetailsModal';
 
-export const metadata = {
-  title: "Gas Turbine Parts - Fuel Nozzles, Turbine Blades, Shrouds, Flame Sensors | Energy World",
-  description: "Find gas turbine parts including fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and overhauling services.",
-  keywords: "fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, overhauling, gas turbine parts, LM2500, LM6000, SGT-600, SGT-800, Frame 5B, Frame 9E",
-};
 
 export default function PartFinderPage() {
   const [searchFilters, setSearchFilters] = useState({
@@ -109,21 +106,21 @@ export default function PartFinderPage() {
       <div className="parts-tooling-part-finder" style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1rem' }}>
       {/* Hero Section */}
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-        <h1 style={{ fontSize: '2.5rem', color: '#1a365d', marginBottom: '1rem' }}>
+        <h1 style={{ fontSize: '2.5rem', color: '#27516b', marginBottom: '1rem' }}>
           Gas Turbine Parts - Fuel Nozzles, Turbine Blades, Shrouds & More
         </h1>
-        <p style={{ fontSize: '1.2rem', color: '#4a5568', maxWidth: '800px', margin: '0 auto' }}>
+        <p style={{ fontSize: '1.2rem', color: '#27516b', maxWidth: '800px', margin: '0 auto' }}>
           Find fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and complete overhauling services for all major gas turbine models.
         </p>
       </div>
 
       {/* Search Interface */}
       <div style={{ background: '#f7fafc', padding: '2rem', borderRadius: '12px', marginBottom: '3rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-        <h2 style={{ color: '#2d3748', marginBottom: '1.5rem', textAlign: 'center' }}>Filter Parts</h2>
+        <h2 style={{ color: '#27516b', marginBottom: '1.5rem', textAlign: 'center' }}>Filter Parts</h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#2d3748' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#27516b' }}>
               Manufacturer
             </label>
             <select 
@@ -151,7 +148,7 @@ export default function PartFinderPage() {
           </div>
           
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#2d3748' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#27516b' }}>
               Model
             </label>
             <select 
@@ -200,7 +197,7 @@ export default function PartFinderPage() {
           </div>
           
           <div>
-            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#2d3748' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: '#27516b' }}>
               Part Category
             </label>
             <select 
@@ -233,7 +230,7 @@ export default function PartFinderPage() {
             onClick={handleSearch}
             disabled={isSearching}
             style={{ 
-              background: isSearching ? '#a0aec0' : '#3182ce',
+              background: isSearching ? '#a0aec0' : '#27516b',
               color: 'white', 
               padding: '0.75rem 2rem', 
               border: 'none', 
@@ -250,9 +247,9 @@ export default function PartFinderPage() {
             onClick={resetSearch}
             style={{ 
               background: 'white',
-              color: '#3182ce', 
+              color: '#27516b', 
               padding: '0.75rem 2rem', 
-              border: '2px solid #3182ce', 
+              border: '2px solid #27516b', 
               borderRadius: '6px', 
               fontSize: '1rem',
               fontWeight: '500',
@@ -267,29 +264,29 @@ export default function PartFinderPage() {
       {/* Parts Results */}
       {showResults && (
         <div style={{ marginBottom: '3rem' }}>
-          <h2 style={{ color: '#2d3748', marginBottom: '2rem', textAlign: 'center' }}>
+          <h2 style={{ color: '#27516b', marginBottom: '2rem', textAlign: 'center' }}>
             {searchFilters.manufacturer || searchFilters.model || searchFilters.category 
               ? `Filtered Results (${searchResults.length} parts found)`
               : `All Parts (${searchResults.length} parts available)`
             }
           </h2>
-          <p style={{ color: '#4a5568', textAlign: 'center', marginBottom: '2rem', fontSize: '0.9rem' }}>
+          <p style={{ color: '#27516b', textAlign: 'center', marginBottom: '2rem', fontSize: '0.9rem' }}>
             Showing {displayedResults.length} of {searchResults.length} parts
           </p>
           
           {isSearching ? (
             <div style={{ textAlign: 'center', padding: '3rem' }}>
-              <div style={{ fontSize: '1.2rem', color: '#4a5568' }}>Filtering parts...</div>
+              <div style={{ fontSize: '1.2rem', color: '#27516b' }}>Filtering parts...</div>
             </div>
           ) : displayedResults.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '3rem', background: '#f7fafc', borderRadius: '12px' }}>
-              <h3 style={{ color: '#2d3748', marginBottom: '1rem' }}>No parts match your filters</h3>
-              <p style={{ color: '#4a5568', marginBottom: '1.5rem' }}>
+              <h3 style={{ color: '#27516b', marginBottom: '1rem' }}>No parts match your filters</h3>
+              <p style={{ color: '#27516b', marginBottom: '1.5rem' }}>
                 Try adjusting your filter criteria or contact our technical team for assistance.
               </p>
               <Link href="/contact" style={{ 
                 display: 'inline-block', 
-                background: '#3182ce', 
+                background: '#27516b', 
                 color: 'white', 
                 padding: '0.75rem 1.5rem', 
                 borderRadius: '6px', 
@@ -316,7 +313,7 @@ export default function PartFinderPage() {
                       top: '1rem', 
                       right: '1rem', 
                       background: part.availability === 'In Stock' ? '#38a169' : 
-                                 part.availability === 'Available' ? '#3182ce' :
+                                 part.availability === 'Available' ? '#27516b' :
                                  part.availability === 'Limited Stock' ? '#d69e2e' : '#e53e3e',
                       color: 'white', 
                       padding: '0.25rem 0.75rem', 
@@ -328,18 +325,18 @@ export default function PartFinderPage() {
                     </div>
                   </div>
                   <div style={{ padding: '1.5rem' }}>
-                    <h3 style={{ color: '#2d3748', marginBottom: '0.5rem' }}>{part.name}</h3>
-                    <p style={{ color: '#4a5568', marginBottom: '0.5rem', fontSize: '0.9rem', fontWeight: '500' }}>
+                    <h3 style={{ color: '#27516b', marginBottom: '0.5rem' }}>{part.name}</h3>
+                    <p style={{ color: '#27516b', marginBottom: '0.5rem', fontSize: '0.9rem', fontWeight: '500' }}>
                       Part Number: {part.partNumber}
                     </p>
-                    <p style={{ color: '#4a5568', marginBottom: '1rem', fontSize: '0.9rem' }}>
+                    <p style={{ color: '#27516b', marginBottom: '1rem', fontSize: '0.9rem' }}>
                       {part.description}
                     </p>
                     
                     {/* Specifications */}
                     <div style={{ marginBottom: '1rem' }}>
-                      <h4 style={{ color: '#2d3748', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Key Specifications:</h4>
-                      <ul style={{ color: '#4a5568', fontSize: '0.8rem', paddingLeft: '1rem', marginBottom: '0' }}>
+                      <h4 style={{ color: '#27516b', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Key Specifications:</h4>
+                      <ul style={{ color: '#27516b', fontSize: '0.8rem', paddingLeft: '1rem', marginBottom: '0' }}>
                         {part.specifications.slice(0, 3).map((spec, index) => (
                           <li key={index}>{spec}</li>
                         ))}
@@ -351,7 +348,7 @@ export default function PartFinderPage() {
                         <div style={{ color: '#e53e3e', fontWeight: '600', fontSize: '1.1rem' }}>
                           ${part.price.toLocaleString()}
                         </div>
-                        <div style={{ color: '#4a5568', fontSize: '0.8rem' }}>
+                        <div style={{ color: '#27516b', fontSize: '0.8rem' }}>
                           Lead Time: {part.leadTime}
                         </div>
                       </div>
@@ -361,7 +358,7 @@ export default function PartFinderPage() {
                       <button 
                         onClick={() => handleQuoteRequest(part)}
                         style={{ 
-                          background: '#3182ce', 
+                          background: '#27516b', 
                           color: 'white', 
                           padding: '0.5rem 1rem', 
                           border: 'none', 
@@ -377,9 +374,9 @@ export default function PartFinderPage() {
                         onClick={() => handleViewDetails(part)}
                         style={{ 
                           background: 'white', 
-                          color: '#3182ce', 
+                          color: '#27516b', 
                           padding: '0.5rem 1rem', 
-                          border: '1px solid #3182ce', 
+                          border: '1px solid #27516b', 
                           borderRadius: '4px', 
                           fontSize: '0.9rem',
                           cursor: 'pointer',
@@ -401,7 +398,7 @@ export default function PartFinderPage() {
               <button
                 onClick={loadMore}
                 style={{
-                  background: '#3182ce',
+                  background: '#27516b',
                   color: 'white',
                   padding: '0.75rem 2rem',
                   border: 'none',
@@ -421,7 +418,7 @@ export default function PartFinderPage() {
 
       {/* Featured Parts */}
       <div style={{ marginBottom: '3rem' }}>
-        <h2 style={{ color: '#2d3748', marginBottom: '2rem', textAlign: 'center' }}>Featured Parts</h2>
+        <h2 style={{ color: '#27516b', marginBottom: '2rem', textAlign: 'center' }}>Featured Parts</h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
           {/* Hot Section Components */}
@@ -449,8 +446,8 @@ export default function PartFinderPage() {
               </div>
             </div>
             <div style={{ padding: '1.5rem' }}>
-              <h3 style={{ color: '#2d3748', marginBottom: '0.5rem' }}>Hot Section Components</h3>
-              <p style={{ color: '#4a5568', marginBottom: '1rem', fontSize: '0.9rem' }}>
+              <h3 style={{ color: '#27516b', marginBottom: '0.5rem' }}>Hot Section Components</h3>
+              <p style={{ color: '#27516b', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 High-temperature resistant components for turbine hot sections including nozzles, blades, and shrouds.
               </p>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -482,7 +479,7 @@ export default function PartFinderPage() {
                     handleViewDetails(samplePart);
                   }}
                   style={{ 
-                    background: '#3182ce', 
+                    background: '#27516b', 
                     color: 'white', 
                     padding: '0.5rem 1rem', 
                     border: 'none', 
@@ -522,8 +519,8 @@ export default function PartFinderPage() {
               </div>
             </div>
             <div style={{ padding: '1.5rem' }}>
-              <h3 style={{ color: '#2d3748', marginBottom: '0.5rem' }}>Compressor Parts</h3>
-              <p style={{ color: '#4a5568', marginBottom: '1rem', fontSize: '0.9rem' }}>
+              <h3 style={{ color: '#27516b', marginBottom: '0.5rem' }}>Compressor Parts</h3>
+              <p style={{ color: '#27516b', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 Precision-engineered compressor components including blades, vanes, and rotor assemblies.
               </p>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -555,7 +552,7 @@ export default function PartFinderPage() {
                     handleViewDetails(samplePart);
                   }}
                   style={{ 
-                    background: '#3182ce', 
+                    background: '#27516b', 
                     color: 'white', 
                     padding: '0.5rem 1rem', 
                     border: 'none', 
@@ -595,8 +592,8 @@ export default function PartFinderPage() {
               </div>
             </div>
             <div style={{ padding: '1.5rem' }}>
-              <h3 style={{ color: '#2d3748', marginBottom: '0.5rem' }}>Combustion System Parts</h3>
-              <p style={{ color: '#4a5568', marginBottom: '1rem', fontSize: '0.9rem' }}>
+              <h3 style={{ color: '#27516b', marginBottom: '0.5rem' }}>Combustion System Parts</h3>
+              <p style={{ color: '#27516b', marginBottom: '1rem', fontSize: '0.9rem' }}>
                 Complete combustion system components including fuel nozzles, liners, and transition pieces.
               </p>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -628,7 +625,7 @@ export default function PartFinderPage() {
                     handleViewDetails(samplePart);
                   }}
                   style={{ 
-                    background: '#3182ce', 
+                    background: '#27516b', 
                     color: 'white', 
                     padding: '0.5rem 1rem', 
                     border: 'none', 
@@ -647,14 +644,14 @@ export default function PartFinderPage() {
 
       {/* Quick Links */}
       <div style={{ background: '#edf2f7', padding: '2rem', borderRadius: '12px', textAlign: 'center' }}>
-        <h3 style={{ color: '#2d3748', marginBottom: '1.5rem' }}>Need Help Finding Parts?</h3>
-        <p style={{ color: '#4a5568', marginBottom: '2rem' }}>
+        <h3 style={{ color: '#27516b', marginBottom: '1.5rem' }}>Need Help Finding Parts?</h3>
+        <p style={{ color: '#27516b', marginBottom: '2rem' }}>
           Our technical experts are here to help you find the right parts for your specific needs
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/contact" style={{ 
             display: 'inline-block', 
-            background: '#3182ce', 
+            background: '#27516b', 
             color: 'white', 
             padding: '0.75rem 1.5rem', 
             borderRadius: '6px', 
@@ -666,12 +663,12 @@ export default function PartFinderPage() {
           <Link href="/parts-tooling/offers" style={{ 
             display: 'inline-block', 
             background: 'white', 
-            color: '#3182ce', 
+            color: '#27516b', 
             padding: '0.75rem 1.5rem', 
             borderRadius: '6px', 
             textDecoration: 'none',
             fontWeight: '500',
-            border: '2px solid #3182ce'
+            border: '2px solid #27516b'
           }}>
             View Special Offers
           </Link>
