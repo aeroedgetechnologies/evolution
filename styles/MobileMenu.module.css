@@ -42,7 +42,7 @@
 
 .menuHeader .menuIcon {
   background: #e6f0fa;
-  color: #20539b;
+  color: #27516b;
   border-radius: 50%;
   width: 2.3rem;
   height: 2.3rem;
@@ -56,13 +56,13 @@
   transition: background 0.2s, box-shadow 0.2s, color 0.2s;
 }
 .menuHeader .menuIcon:hover {
-  background: #20539b;
+  background: #27516b;
   color: #fff;
   box-shadow: 0 4px 16px rgba(32,83,155,0.15);
 }
 
 .menuHeader span {
-  color: #20539b;
+  color: #27516b;
   font-weight: 700;
   font-size: 1.1rem;
 }
@@ -76,7 +76,7 @@
 .menuItem {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: #20539b;
+  color: #27516b;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -101,7 +101,7 @@
 }
 
 .menuFooter a {
-  color: #20539b;
+  color: #27516b;
   font-size: 1.4rem;
   margin-right: 1rem;
 }
@@ -111,7 +111,7 @@
 
 .menuIcon {
   font-size: 1.7rem;
-  color: #20539b; /* blue theme color */
+  color: #27516b; /* blue theme color */
   cursor: pointer;
   padding: 0.5rem 0.8rem;
   background: none;

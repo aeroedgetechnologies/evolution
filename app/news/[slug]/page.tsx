@@ -55,7 +55,7 @@ export default function Page(props: any) {
   if (!news) return notFound();
   return (
     <div style={{ maxWidth: 900, margin: '2.5rem auto', padding: '2rem 1rem', background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.07)' }}>
-      <h1 style={{ color: '#20539b', fontWeight: 800, margin: '1.5rem 0 1rem 0' }}>{news.title}</h1>
+      <h1 style={{ color: '#27516b', fontWeight: 800, margin: '1.5rem 0 1rem 0' }}>{news.title}</h1>
       <div style={{ color: '#888', fontSize: '1rem', marginBottom: 16 }}>{news.date}</div>
       <img src={news.image} alt={news.title} style={{ width: '100%', maxHeight: 400, objectFit: 'cover', borderRadius: 8, marginBottom: 24 }} />
       <div style={{ color: '#222', fontSize: '1.13rem', lineHeight: 1.7 }}>{news.desc}</div>

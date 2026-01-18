@@ -42,23 +42,24 @@ export default function ContactPage() {
       <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%', maxWidth: 1100, background: '#fff', borderRadius: 16, boxShadow: '0 4px 32px rgba(0,0,0,0.07)', overflow: 'hidden', margin: '2.5rem 0' }}>
         {/* Left: Contact Form */}
         <div style={{ flex: 1, minWidth: 320, padding: '2.5rem 2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <h1 style={{ color: '#20539b', fontWeight: 800, fontSize: '2rem', marginBottom: '0.5rem' }}>Contact Energy World</h1>
-          <div style={{ color: '#20539b', fontWeight: 500, marginBottom: '1.2rem' }}>We'd love to hear from you! Fill out the form and our team will get back to you soon.</div>
+          <h1 style={{ color: '#27516b', fontWeight: 800, fontSize: '2rem', marginBottom: '0.5rem' }}>Contact Energy World</h1>
+          <div style={{ color: '#27516b', fontWeight: 500, marginBottom: '1.2rem' }}>We'd love to hear from you! Fill out the form and our team will get back to you soon.</div>
           <div style={{ marginBottom: '1.2rem', color: '#222', fontSize: '1.08rem' }}>
             <div><b>Email:</b> info@energyworld.ltd</div>
+            <div><b>Email:</b> office.uae@energyworld.ltd</div>
             <div><b>Phone:</b> +971 589120710</div>
           </div>
           <form style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.1rem' }} onSubmit={handleSubmit}>
-            <label style={{ fontWeight: 600, color: '#20539b' }}>Name
+            <label style={{ fontWeight: 600, color: '#27516b' }}>Name
               <input type="text" name="name" value={form.name} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
             </label>
-            <label style={{ fontWeight: 600, color: '#20539b' }}>Email
+            <label style={{ fontWeight: 600, color: '#27516b' }}>Email
               <input type="email" name="email" value={form.email} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
             </label>
-            <label style={{ fontWeight: 600, color: '#20539b' }}>Message
+            <label style={{ fontWeight: 600, color: '#27516b' }}>Message
               <textarea name="message" rows={4} value={form.message} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem', resize: 'vertical' }} />
             </label>
-            <button type="submit" disabled={loading} style={{ background: '#20539b', color: '#fff', border: 'none', borderRadius: 6, padding: '0.8rem 0', fontWeight: 700, fontSize: '1.08rem', cursor: 'pointer', marginTop: 8, transition: 'background 0.2s' }}>{loading ? 'Sending...' : 'Send Message'}</button>
+            <button type="submit" disabled={loading} style={{ background: '#27516b', color: '#fff', border: 'none', borderRadius: 6, padding: '0.8rem 0', fontWeight: 700, fontSize: '1.08rem', cursor: 'pointer', marginTop: 8, transition: 'background 0.2s' }}>{loading ? 'Sending...' : 'Send Message'}</button>
           </form>
           {success && <div style={{ color: 'green', marginTop: '1rem', fontWeight: 600 }}>{success}</div>}
           {error && <div style={{ color: 'red', marginTop: '1rem', fontWeight: 600 }}>{error}</div>}

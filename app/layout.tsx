@@ -119,8 +119,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/Energy World.jpg" type="image/png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#20539b" />
-        <meta name="msapplication-TileColor" content="#20539b" />
+        <meta name="theme-color" content="#27516b" />
+        <meta name="msapplication-TileColor" content="#27516b" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Energy World" />
@@ -206,11 +206,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="energyworld-header__right">
             <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}></span>Phone <span>|</span></span>
-              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>+971 589120710</span>
+              <span style={{color:'#27516b',fontWeight:500,marginLeft:8}}>+971 589120710</span>
             </div>
             <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}></span>Email <span>|</span></span>
-              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>info@energyworld.ltd</span>
+              <span style={{color:'#27516b',fontWeight:500,marginLeft:8}}>info@energyworld.ltd</span>
             </div>
             {/* <form className="energyworld-search-form">
               <input type="text" placeholder="Search..." className="energyworld-search-input" />

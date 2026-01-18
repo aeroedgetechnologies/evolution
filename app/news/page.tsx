@@ -56,17 +56,17 @@ const newsItems: NewsItem[] = [
 export default async function NewsPage() {
   return (
     <div style={{ maxWidth: 1200, margin: '2.5rem auto', padding: '2rem 1rem' }}>
-      <h1 style={{ color: '#20539b', fontWeight: 800, marginBottom: '2rem', textAlign: 'center' }}>News & Downloads</h1>
+      <h1 style={{ color: '#27516b', fontWeight: 800, marginBottom: '2rem', textAlign: 'center' }}>News & Downloads</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', justifyContent: 'center' }}>
         {newsItems.map((item) => (
           <div key={item.slug} style={{ background: '#fff', borderRadius: 12, boxShadow: '0 2px 16px rgba(0,0,0,0.07)', width: 320, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <Link href={`/news/${item.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <img src={item.image} alt={item.title} style={{ width: '100%', height: 180, objectFit: 'cover' }} />
               <div style={{ padding: '1.2rem' }}>
-                <div style={{ color: '#20539b', fontWeight: 700, fontSize: '1.08rem', marginBottom: 8 }}>{item.title}</div>
+                <div style={{ color: '#27516b', fontWeight: 700, fontSize: '1.08rem', marginBottom: 8 }}>{item.title}</div>
                 <div style={{ color: '#888', fontSize: '0.98rem', marginBottom: 8 }}>{item.date}</div>
                 <div style={{ color: '#222', fontSize: '1rem' }}>{item.desc}</div>
-                <div style={{ color: '#20539b', fontWeight: 600, marginTop: 12, fontSize: '1rem' }}>read more</div>
+                <div style={{ color: '#27516b', fontWeight: 600, marginTop: 12, fontSize: '1rem' }}>read more</div>
               </div>
             </Link>
           </div>

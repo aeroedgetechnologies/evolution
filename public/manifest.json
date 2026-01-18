@@ -4,8 +4,8 @@
   "description": "Energy World is specialized in Energy Solutions, Services, Parts and Tooling. Empowering a Sustainable Future with decades of experience in gas turbines, power generation, and industrial applications.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#20539b",
-  "theme_color": "#20539b",
+  "background_color": "#27516b",
+  "theme_color": "#27516b",
   "orientation": "portrait-primary",
   "icons": [
     {
