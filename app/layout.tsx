@@ -211,8 +211,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="energyworld-header__contact">
               <span style={{fontWeight:600}}><span style={{fontSize:'1.2em',marginRight:4}}></span>Email <span>|</span></span>
               <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>info@energyworld.ltd</span>
-              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>office.uae@energyworld.ltd</span>
-              <span style={{color:'#20539b',fontWeight:500,marginLeft:8}}>office.uae@energyworld.ltd</span>
             </div>
             {/* <form className="energyworld-search-form">
               <input type="text" placeholder="Search..." className="energyworld-search-input" />
