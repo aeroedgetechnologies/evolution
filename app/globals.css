@@ -43,7 +43,7 @@ nav a, nav span {
 }
 
 nav a:hover, nav span:hover {
-  background: #d0e3fa;
+  background: #386e88;
 }
 
 main {
@@ -211,7 +211,7 @@ footer {
 }
 
 .dropdown-content a:hover {
-  background: #e6f0fa;
+  background: #386e88;
 }
 
 .dropdown:hover .dropdown-content,
@@ -421,7 +421,7 @@ footer {
   font-family: 'Futura', 'Futura PT', 'Futura Std', 'Avenir', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
 }
 .dropdown li:hover, .dropdown li:focus {
-  background: #e6f0fa;
+  background: #386e88;
   border-left: 3px solid #27516b;
   color: #27516b;
   font-weight: 700;
@@ -1203,7 +1203,7 @@ ul li, .card-list li {
 .dropdown li:hover > a,
 .dropdown li:hover > span,
 .dropdown li:hover {
-  background: #e6f0fa;
+  background: #386e88;
   color: #27516b;
 }
 
