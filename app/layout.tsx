@@ -154,9 +154,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "ContactPoint",
                 "telephone": "+971 589120710",
                 "contactType": "customer service",
-                "email": "info@energyworld.ltd",
-                "email": "office.uae@energyworld.ltd",
-                "email": "office.uae@energyworld.ltd",
+                "email": ["info@energyworld.ltd", "office.uae@energyworld.ltd"],
                 "availableLanguage": "English"
               },
               "sameAs": [
