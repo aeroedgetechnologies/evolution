@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #D2D2D2;
+  background: #f8f9fa;
   color: #222;
   overflow-x: hidden;
 }
@@ -107,46 +107,6 @@ footer {
 .energyworld-nav__list > li > a, .energyworld-nav__list > li > span {
   font-family: sans-serif;
 }
-.featured>div, .news-list>div, ul>li {
-    background: #fff;
-    padding: 1rem;
-    border-radius: var(--border-radius);
-    min-width: 200px;
-    flex: none !important;
-    box-sizing: border-box;
-}
-
-section.jsx-d05d2171e76ab7c0 {
-    background: #27516b !important;
-}section.jsx-d05d2171e76ab7c0 h2.jsx-d05d2171e76ab7c0 {
-    color: #d2d2d2 !important;
-}
-
-section.jsx-d05d2171e76ab7c0 p.jsx-d05d2171e76ab7c0 {
-    color: #d2d2d2;
-}
-
-
-.energyworld-header__right span {
-    COLOR: #27516b !IMPORTANT;
-}
-
-
-.energyworld-nav, .energyworld-nav__list {
-    background: #27516b !IMPORTANT;
-}
-
-
-ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
-    background: #d2d2d2 !important;
-    color: #27516b !important;
-    padding: 0.5rem 8px !important;
-}
-.energyworld-nav__list>li.active>a, .energyworld-nav__list>li.active>span, .energyworld-nav__list>li:hover>a, .energyworld-nav__list>li:hover>span {
-    background: #27516b !important;
-}
-
-
 /* Responsive Design */
 @media (max-width: 900px) {
   main {
@@ -281,7 +241,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #D2D2D2;
+  background: #fff;
   border-bottom: 3px solid #1a397b;
   flex-wrap: wrap;
 }
@@ -295,7 +255,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 
 .energyworld-tagline {
   font-size: 1.1rem;
-  color: #27516b !important;
+  color: #1a397b;
   font-weight: 500;
 }
 
@@ -321,7 +281,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #27516b;
+  background: #20539b;
   width: 100%;
 }
 .energyworld-nav__list > li {
@@ -332,7 +292,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 .energyworld-nav__list > li > a,
 .energyworld-nav__list > li > span {
-  background: #27516b;
+  background: #20539b;
   color: #fff;
   padding: 0.7rem 1.1rem 0.7rem 1.1rem;
   border-radius: 0;
@@ -379,7 +339,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   right: 8%;
   bottom: 0;
   height: 3px;
-  background: #27516b;
+  background: #20539b;
   border-radius: 2px 2px 0 0;
 }
 .energyworld-nav__list > li > a:focus::after,
@@ -424,7 +384,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #27516b;
+  background: #20539b;
   color: #fff;
   min-width: 220px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.13);
@@ -445,12 +405,12 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   text-align: left;
   border-left: 3px solid transparent;
   transition: border-color 0.2s, background 0.2s, color 0.2s;
-  color: #27516b;
+  color: #20539b;
   font-weight: 500;
   background: #fff;
 }
 .dropdown li a, .dropdown li span {
-  color: #27516b;
+  color: #20539b;
   text-decoration: none;
   display: block;
   transition: color 0.2s, background 0.2s;
@@ -462,12 +422,12 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 .dropdown li:hover, .dropdown li:focus {
   background: #e6f0fa;
-  border-left: 3px solid #27516b;
-  color: #27516b;
+  border-left: 3px solid #20539b;
+  color: #20539b;
   font-weight: 700;
 }
 .dropdown li:hover > a, .dropdown li:hover > span {
-  color: #27516b;
+  color: #20539b;
   background: transparent;
   font-weight: 700;
 }
@@ -503,7 +463,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 
 /* Header area above menu */
 .energyworld-header {
-  background: #D2D2D2;
+  background: #f8fafc;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -527,7 +487,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 .energyworld-tagline {
   font-size: 1.15rem;
-  color: #27516b;
+  color: #20539b;
   font-weight: 600;
 }
 .energyworld-header__center {
@@ -538,7 +498,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 .energyworld-header__contact {
   font-size: 1.05rem;
-  color: #27516b;
+  color: #20539b;
   font-weight: 500;
   margin-bottom: 0.1rem;
   white-space: nowrap;
@@ -565,7 +525,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   background: transparent;
 }
 .energyworld-search-btn {
-  background: #27516b;
+  background: #20539b;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -596,7 +556,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   margin-left: 0.5rem;
 }
 .energyworld-social {
-  color: #27516b;
+  color: #20539b;
   font-size: 1.3em;
   margin-left: 0.5rem;
   text-decoration: none;
@@ -609,7 +569,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 
 /* Footer modern responsive */
 .energyworld-footer {
-  background: #27516b;
+  background: #20539b;
   color: #fff;
   padding: 2.5rem 1rem 1.2rem 1rem;
   margin-top: 3rem;
@@ -627,7 +587,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 .energyworld-footer__col {
   min-width: 180px;
-  /* flex: 1 1 180px; */
+  flex: 1 1 180px;
   margin-bottom: 1rem;
 }
 .energyworld-footer-logo {
@@ -763,7 +723,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 .energyworld-nav__list > li > a,
 .energyworld-nav__list > li > span {
   color: #fff;
-  background: #27516b;
+  background: #20539b;
   text-decoration: none;
   transition: color 0.2s, background 0.2s;
   white-space: nowrap;
@@ -793,7 +753,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
 }
 
 .dropdown {
-  background: #27516b !important;
+  background: #20539b !important;
   color: #fff;
   border-top: none !important;
   border-bottom: none !important;
@@ -801,7 +761,7 @@ ul.jsx-d05d2171e76ab7c0 li.jsx-d05d2171e76ab7c0 {
   margin-bottom: 0 !important;
 }
 .dropdown li, .dropdown li a, .dropdown li span {
-  background: #27516b !important;
+  background: #20539b !important;
   color: #fff !important;
 }
 .dropdown li:hover, .dropdown li:focus, .dropdown li:hover > a, .dropdown li:hover > span {
@@ -826,7 +786,7 @@ ul li, .card-list li {
   padding: 1.2rem 1.5rem;
   min-width: 220px;
   font-size: 1.08rem;
-  color: #27516b;
+  color: #20539b;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -887,7 +847,7 @@ ul li, .card-list li {
     width: 100%;
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    border-bottom: 1px solid #27516b;
+    border-bottom: 1px solid #20539b;
   }
 }
 /* Submenu arrow right-aligned for nested submenus */
@@ -1106,14 +1066,14 @@ ul li, .card-list li {
 
 /* 1. Menu bar solid blue, edge-to-edge */
 .energyworld-nav {
-  background: #27516b !important;
+  background: #20539b !important;
   box-shadow: none !important;
   border: none !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 .energyworld-nav__list {
-  background: #27516b !important;
+  background: #20539b !important;
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
@@ -1122,7 +1082,7 @@ ul li, .card-list li {
 .energyworld-nav__list > li,
 .energyworld-nav__list > li > a,
 .energyworld-nav__list > li > span {
-  background: #27516b !important;
+  background: #20539b !important;
   color: #fff !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -1130,7 +1090,7 @@ ul li, .card-list li {
 
 /* 2. Dropdowns unified blue, no gap, no shadow, no border */
 .dropdown, .dropdown.wide, .dropdown.right {
-  background: #27516b !important;
+  background: #20539b !important;
   color: #fff !important;
   margin: 0 !important;
   margin-top: 0 !important;
@@ -1146,7 +1106,7 @@ ul li, .card-list li {
   top: 0;
 }
 .dropdown li, .dropdown li a, .dropdown li span {
-  background: #27516b !important;
+  background: #20539b !important;
   color: #fff !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -1177,14 +1137,14 @@ ul li, .card-list li {
 
 /* Main nav bar */
 .energyworld-nav {
-  background: #27516b;
+  background: #20539b;
   box-shadow: none;
   border: none;
   margin: 0;
   padding: 0;
 }
 .energyworld-nav__list {
-  background: #27516b;
+  background: #20539b;
   margin: 0;
   padding: 0;
   border: none;
@@ -1195,7 +1155,7 @@ ul li, .card-list li {
 .energyworld-nav__list > li > a,
 .energyworld-nav__list > li > span {
   color: #fff;
-  background: #27516b;
+  background: #20539b;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0.7rem 1.1rem;
@@ -1254,7 +1214,7 @@ ul li, .card-list li {
 .dropdown li:hover > span,
 .dropdown li:hover {
   background: #e6f0fa;
-  color: #27516b;
+  color: #20539b;
 }
 
 /* --- MOBILE MENU --- */
@@ -1292,7 +1252,7 @@ ul li, .card-list li {
     width: 100%;
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    border-bottom: 1px solid #27516b;
+    border-bottom: 1px solid #20539b;
   }
   .dropdown, .dropdown.wide, .dropdown.right {
     position: static;
@@ -1334,7 +1294,7 @@ ul li, .card-list li {
     display: block !important;
   }
   .dropdown li a, .dropdown li span {
-    color: #27516b;
+    color: #20539b;
     background: #fff;
     padding: 14px 24px;
     display: block;
@@ -1387,7 +1347,7 @@ ul li, .card-list li {
     top: 100%;
     left: 0;
     min-width: 220px;
-    background: #27516b;
+    background: #20539b;
     color: #fff;
     box-shadow: 0 8px 32px rgba(0,0,0,0.13);
     z-index: 100;
@@ -1522,7 +1482,7 @@ li.has-dropdown {
   right: 8%;
   bottom: 0;
   height: 3px;
-  background: #27516b;
+  background: #20539b;
   border-radius: 2px 2px 0 0;
 }
 .energyworld-nav__list > li:hover > a::after,
@@ -1573,7 +1533,7 @@ li.has-dropdown {
     left: 0 !important;
     top: auto !important;
     box-shadow: none !important;
-    background: #27516b !important;
+    background: #20539b !important;
     border-radius: 0 !important;
     margin: 0 !important;
     min-width: 0 !important;
@@ -1592,7 +1552,7 @@ li.has-dropdown {
     margin: 0 !important;
     min-width: 0 !important;
     box-shadow: none !important;
-    background: #27516b !important;
+    background: #20539b !important;
     border-radius: 0 !important;
     transform: none !important;
   }
@@ -1608,7 +1568,7 @@ li.has-dropdown {
 /* --- MENU HOVER/ACTIVE FIX --- */
 .energyworld-nav__list > li > a,
 .energyworld-nav__list > li > span {
-  background: #27516b;
+  background: #20539b;
   transition: background 0.2s;
 }
 .energyworld-nav__list > li:hover > a,
@@ -1619,7 +1579,7 @@ li.has-dropdown {
 }
 .energyworld-nav__list > li:not(:hover):not(.active) > a,
 .energyworld-nav__list > li:not(:hover):not(.active) > span {
-  background: #27516b;
+  background: #20539b;
 }
 
 .energyworld-nav__list > li > a::after,
@@ -1631,7 +1591,7 @@ li.has-dropdown {
   right: 8%;
   bottom: 0;
   height: 3px;
-  background: #27516b;
+  background: #20539b;
   border-radius: 2px 2px 0 0;
 }
 .energyworld-nav__list > li:hover > a::after,
@@ -1650,31 +1610,31 @@ span.arrow:hover {
     background: #1a437a !important; /* Change to a different color on hover */
 }
 ul.dropdown.wide li:hover {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
 }
 
 ul.dropdown.wide li a:hover {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
     color: white !important;
 }
 
 ul.dropdown.wide li.has-dropdown:hover > span,
 ul.dropdown.wide li.has-dropdown:hover > span.arrow {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
     color: white !important;
 }
 
 ul.dropdown.wide li.has-dropdown:hover > .dropdown {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
 }
 
 ul.dropdown.wide li.has-dropdown:hover > .dropdown li a {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
     color: white !important;
 }
 
 ul.dropdown.wide li.has-dropdown .dropdown li a:hover {
-    background-color: #27516b !important;
+    background-color: #20539b !important;
     color: white !important;
 }
 
