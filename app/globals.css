@@ -526,7 +526,7 @@ footer {
   transition: background 0.2s;
 }
 .energyworld-search-btn:hover {
-  background: #17407b;
+  background: #386e88;
 }
 .energyworld-quote-btn {
   background: #1db954;
@@ -1597,7 +1597,7 @@ li.has-dropdown {
   display: none !important;
 }
 span.arrow:hover {
-    background: #1a437a !important; /* Change to a different color on hover */
+    background: #386e88 !important; /* Change to a different color on hover */
 }
 ul.dropdown.wide li:hover {
     background-color: #27516b !important;

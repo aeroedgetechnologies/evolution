@@ -7,11 +7,13 @@ import { searchParts, getManufacturers, getModels, getCategories, Part } from '.
 import { QuoteModal } from './QuoteModal';
 import { DetailsModal } from './DetailsModal';
 
+export const metadata = {
+  title: "Gas Turbine Parts - Fuel Nozzles, Turbine Blades, Shrouds, Flame Sensors | Energy World",
+  description: "Find gas turbine parts including fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and overhauling services.",
+  keywords: "fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, overhauling, gas turbine parts, LM2500, LM6000, SGT-600, SGT-800, Frame 5B, Frame 9E",
+};
+
 export default function PartFinderPage() {
-  // SEO Meta Tags
-  const seoTitle = "Gas Turbine Parts - Fuel Nozzles, Turbine Blades, Shrouds, Flame Sensors | Energy World";
-  const seoDescription = "Find gas turbine parts including fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and overhauling services.";
-  const seoKeywords = "fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, overhauling, gas turbine parts, LM2500, LM6000, SGT-600, SGT-800, Frame 5B, Frame 9E";
   const [searchFilters, setSearchFilters] = useState({
     manufacturer: '',
     model: '',
@@ -106,18 +108,6 @@ export default function PartFinderPage() {
   };
   return (
     <>
-      <head>
-        <title>{seoTitle}</title>
-        <meta name="description" content={seoDescription} />
-        <meta name="keywords" content={seoKeywords} />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={seoTitle} />
-        <meta property="og:description" content={seoDescription} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={seoTitle} />
-        <meta name="twitter:description" content={seoDescription} />
-      </head>
       <div className="parts-tooling-part-finder" style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1rem' }}>
       {/* Hero Section */}
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
