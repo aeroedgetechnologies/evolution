@@ -10,7 +10,7 @@ export default function OffersPage() {
   // SEO Meta Tags
   const seoTitle = "Gas Turbine Parts Special Offers - Fuel Nozzles, Turbine Blades, Shrouds | Energy World";
   const seoDescription = "Special offers on gas turbine parts including fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and overhauling services.";
-  const seoKeywords = "gas turbine parts offers, fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, overhauling, special offers";
+  const seoKeywords = "gas turbine parts offers, fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, overhauling, special offers, GT13E2 hot section parts, Alstom HTCT115098R0013, Solar Mars 100 parts, Siemens SGT5-4000F";
   const [offerResults, setOfferResults] = useState<OfferItem[]>([]);
   const [displayedResults, setDisplayedResults] = useState<OfferItem[]>([]);
   const [showResults, setShowResults] = useState(false);
