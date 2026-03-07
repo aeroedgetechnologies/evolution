@@ -110,7 +110,7 @@ export default function PartFinderPage() {
           Gas Turbine Parts - Fuel Nozzles, Turbine Blades, Shrouds & More
         </h1>
         <p style={{ fontSize: '1.2rem', color: '#27516b', maxWidth: '800px', margin: '0 auto' }}>
-          Find fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and complete overhauling services for all major gas turbine models.
+          Find fuel nozzles, fuel nozzle blades, shrouds, flame sensors, centrifugal atomising compressors, turbine blades, turbine wheels, turbine rotor, combustion section parts, and complete overhauling services for all major gas turbine models, including GT13E2 hot section parts, Alstom HTCT115098R0013, Solar Mars 100 parts, and Siemens SGT5-4000F components.
         </p>
       </div>
 
