@@ -38,7 +38,11 @@ export const metadata: Metadata = {
     "Kubota Valves",
     "Dresser Rand",
     "Howden Compressors",
-    "Energy World Finland"
+    "Energy World Finland",
+    "GT13E2 hot section parts",
+    "Alstom HTCT115098R0013",
+    "Solar Mars 100 parts",
+    "Siemens SGT5-4000F"
   ],
   authors: [{ name: "Energy World Ltd" }],
   creator: "Energy World Ltd",
