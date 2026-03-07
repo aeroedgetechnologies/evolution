@@ -4,7 +4,7 @@ export default function HeavyDutyHotSectionPage() {
       <h1>Hot Section</h1>
       <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=700&q=80" alt="Heavy Duty Hot Section" style={{ width: '100%', maxWidth: 500, borderRadius: 8, margin: '1rem 0' }} />
       <p>
-        We provide hot section inspection and refurbishment for Heavy Duty turbines, using advanced materials and techniques to maximize component life and performance.
+        We provide hot section inspection and refurbishment for Heavy Duty turbines, using advanced materials and techniques to maximize component life and performance, including GT13E2 hot section parts, Siemens SGT5-4000F components, and Solar Mars 100 hot section assemblies.
       </p>
       <ul>
         <li>Hot section inspection</li>
