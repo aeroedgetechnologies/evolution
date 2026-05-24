@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
   images: {
     domains: ['picsum.photos', 'images.unsplash.com'],
     unoptimized: true,
