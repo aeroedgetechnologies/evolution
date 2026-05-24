@@ -24,9 +24,19 @@ export function RFQModal({ isOpen, onClose, offerItem }: RFQModalProps) {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('RFQ submitted:', { offerItem, formData });
+    await fetch('/api/inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        organization: formData.company,
+        message: `Offer: ${offerItem?.name || ''} | Type: ${formData.offerType} | Quantity: ${formData.quantity} | Timeline: ${formData.projectTimeline} | Budget: ${formData.budget} | Notes: ${formData.message}`,
+      }),
+    });
     setIsSubmitted(true);
     
     setTimeout(() => {

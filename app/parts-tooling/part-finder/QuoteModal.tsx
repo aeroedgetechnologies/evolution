@@ -20,10 +20,19 @@ export function QuoteModal({ isOpen, onClose, part }: QuoteModalProps) {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would submit to your backend
-    console.log('Quote request submitted:', { part, formData });
+    await fetch('/api/inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: '',
+        organization: formData.company,
+        message: `Part: ${part?.name || ''} (${part?.partNumber || ''}) | Quantity: ${formData.quantity} | Notes: ${formData.message}`,
+      }),
+    });
     setIsSubmitted(true);
     
     // Auto-close after showing success message

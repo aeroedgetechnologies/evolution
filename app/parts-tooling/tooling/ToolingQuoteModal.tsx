@@ -21,9 +21,19 @@ export function ToolingQuoteModal({ isOpen, onClose, toolingItem }: ToolingQuote
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Tooling quote request submitted:', { toolingItem, formData });
+    await fetch('/api/inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: '',
+        organization: formData.company,
+        message: `Tooling: ${toolingItem?.name || ''} | Project Type: ${formData.projectType} | Duration: ${formData.duration} day(s) | Notes: ${formData.message}`,
+      }),
+    });
     setIsSubmitted(true);
     
     setTimeout(() => {

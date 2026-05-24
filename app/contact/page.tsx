@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', organization: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
@@ -19,7 +19,7 @@ export default function ContactPage() {
     setSuccess('');
     setError('');
     try {
-      const res = await fetch('https://mfs-backend-8j9h.onrender.com/api/contact', {
+      const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -27,7 +27,7 @@ export default function ContactPage() {
       const data = await res.json();
       if (data.success) {
         setSuccess('Your message has been sent!');
-        setForm({ name: '', email: '', message: '' });
+        setForm({ name: '', email: '', phone: '', organization: '', message: '' });
       } else {
         setError(data.error || 'Failed to send message.');
       }
@@ -55,6 +55,12 @@ export default function ContactPage() {
             </label>
             <label style={{ fontWeight: 600, color: '#27516b' }}>Email
               <input type="email" name="email" value={form.email} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
+            </label>
+            <label style={{ fontWeight: 600, color: '#27516b' }}>Phone
+              <input type="text" name="phone" value={form.phone} onChange={handleChange} style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
+            </label>
+            <label style={{ fontWeight: 600, color: '#27516b' }}>Organization
+              <input type="text" name="organization" value={form.organization} onChange={handleChange} style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem' }} />
             </label>
             <label style={{ fontWeight: 600, color: '#27516b' }}>Message
               <textarea name="message" rows={4} value={form.message} onChange={handleChange} required style={{ width: '100%', padding: '0.7rem', borderRadius: 6, border: '1px solid #c3d0e6', marginTop: 4, fontSize: '1rem', resize: 'vertical' }} />
